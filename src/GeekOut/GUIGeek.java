@@ -1,6 +1,7 @@
 package GeekOut;
 
 import java.awt.*;
+import java.util.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
@@ -12,10 +13,13 @@ public class GUIGeek extends JFrame{
     private  JButton[] dados;
     private JButton[] botones;
     private JPanel panelDadosActivos, panelDadosInactivos, panelDadosUsados, panelPuntuacion;
-    private ImageIcon imageDado, imageDado2, imageDado3,imageDado4, imageDado5, imageDado6, imageDado7, imageDado8, imageDado9, imageDado10, imageDadoInactivo, imageDadoInactivo2, imageDadoInactivo3;
+    private ImageIcon dado, imageDado, imageDado2, imageDado3,imageDado4, imageDado5, imageDado6, imageDado7, imageDado8, imageDado9, imageDado10, imageDadoInactivo, imageDadoInactivo2, imageDadoInactivo3;
     private GUIGeek.Escucha escucha;
+    private ImageIcon[] imagenesDados;
+    ArrayList<ImageIcon>    imagenes;
     private JSeparator separator;
     private ModelGeek modelGeek;
+    int uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez;
 
 
     public GUIGeek() {
@@ -78,20 +82,24 @@ public class GUIGeek extends JFrame{
         constraints.anchor=GridBagConstraints.LINE_END;
         this.add(salir,constraints);
 
+
+
         int min_val = 1;
         int max_val = 6;
         Random ran = new Random();
 
-        int uno = ran.nextInt(max_val) + min_val;
-        int dos = ran.nextInt(max_val) + min_val;
-        int tres = ran.nextInt(max_val) + min_val;
-        int cuatro = ran.nextInt(max_val) + min_val;
-        int cinco = ran.nextInt(max_val) + min_val;
-        int seis = ran.nextInt(max_val) + min_val;
-        int siete = ran.nextInt(max_val) + min_val;
-        int ocho = ran.nextInt(max_val) + min_val;
-        int nueve = ran.nextInt(max_val) + min_val;
-        int diez = ran.nextInt(max_val) + min_val;
+        uno = ran.nextInt(max_val) + min_val;
+        dos = ran.nextInt(max_val) + min_val;
+        tres = ran.nextInt(max_val) + min_val;
+        cuatro = ran.nextInt(max_val) + min_val;
+        cinco = ran.nextInt(max_val) + min_val;
+        seis = ran.nextInt(max_val) + min_val;
+        siete = ran.nextInt(max_val) + min_val;
+        ocho = ran.nextInt(max_val) + min_val;
+        nueve = ran.nextInt(max_val) + min_val;
+        diez = ran.nextInt(max_val) + min_val;
+
+
 
         //Panel dados Activos
         dados = new JButton[7];
@@ -102,6 +110,8 @@ public class GUIGeek extends JFrame{
         dados[0].setBorder(null);
         dados[0].setContentAreaFilled(false);
         dados[0].setFocusable(true);
+
+
 
         imageDado2 = new ImageIcon(getClass().getResource("/resources/"+cinco+".png"));
         dados[1] = new JButton(imageDado2);
@@ -132,11 +142,26 @@ public class GUIGeek extends JFrame{
         dados[4].setFocusable(true);
 
         imageDado6 = new ImageIcon(getClass().getResource("/resources/"+nueve+".png"));
-        dados[5] = new JButton(imageDado3);
+        dados[5] = new JButton(imageDado6);
         dados[5].setOpaque(true);
         dados[5].setBorder(null);
         dados[5].setContentAreaFilled(false);
         dados[5].setFocusable(true);
+
+        /**
+        imagenes = new ArrayList<ImageIcon>();
+        imageDado6 = new ImageIcon(getClass().getResource("/resources/"+nueve+".png"));
+
+        dado = new ImageIcon(getClass().getResource("/resources/1.png"));
+
+        imagenes.add(imageDado);
+        imagenes.add(dado);
+        imagenes.add(imageDado2);
+        imagenes.add(imageDado3);
+        imagenes.add(imageDado4);
+        imagenes.add(imageDado5);
+        imagenes.add(imageDado6);
+        imagenes.add(imageDado7);*/
 
         imageDado7 = new ImageIcon(getClass().getResource("/resources/"+diez+".png"));
         dados[6] = new JButton(imageDado7);
@@ -144,6 +169,8 @@ public class GUIGeek extends JFrame{
         dados[6].setBorder(null);
         dados[6].setContentAreaFilled(false);
         dados[6].setFocusable(true);
+
+
 
         panelDadosActivos = new JPanel();
         panelDadosActivos.setPreferredSize(new Dimension(450, 250));
@@ -253,6 +280,28 @@ public class GUIGeek extends JFrame{
         }
 
         public void actionPerformed(ActionEvent e) {
+            if(uno == 1){
+                System.out.println("todo salio good");
+
+            }else if(uno == 2){
+                System.out.println("todo salio good2");
+
+            }else if (uno == 3){
+                System.out.println("todo salio good3");
+
+            }else if(uno == 4){
+                System.out.println("todo salio good4");
+
+            }else if(uno == 5){
+                System.out.println("todo salio good5");
+
+            }else if(uno == 6){
+                System.out.println("todo salio good6");
+
+            }else if(uno == 7){
+                System.out.println("todo salio good7");
+
+            }
             if (e.getSource() == tirar) {
                 System.out.println("todo salio good");
 
@@ -290,6 +339,7 @@ public class GUIGeek extends JFrame{
                     System.exit(0);
                 }
             }
+
 
 
 
