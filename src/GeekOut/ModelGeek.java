@@ -22,6 +22,11 @@ public class ModelGeek {
 
     }
 
+    public void calcularTiro(){
+
+
+    }
+
 
     public int[] getCaras() {
         return caras;

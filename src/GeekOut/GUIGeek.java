@@ -8,7 +8,9 @@ import java.util.Random;
 public class GUIGeek extends JFrame{
     public static final String MENSAJE_INICIO="PROBANDO";
     private Header headerProject;
-    private JButton tirar, salir,ayuda,dado,dado2, dado3, dado4, dado5, dado6, dado7, dado8, dado9, dado10, dadoInactivo, dadoInactivo2, dadoInactivo3;
+    private JButton tirar, salir,ayuda;
+    private  JButton[] dados;
+    private JButton[] botones;
     private JPanel panelDadosActivos, panelDadosInactivos, panelDadosUsados, panelPuntuacion;
     private ImageIcon imageDado, imageDado2, imageDado3,imageDado4, imageDado5, imageDado6, imageDado7, imageDado8, imageDado9, imageDado10, imageDadoInactivo, imageDadoInactivo2, imageDadoInactivo3;
     private GUIGeek.Escucha escucha;
@@ -92,66 +94,67 @@ public class GUIGeek extends JFrame{
         int diez = ran.nextInt(max_val) + min_val;
 
         //Panel dados Activos
+        dados = new JButton[7];
 
         imageDado = new ImageIcon(getClass().getResource("/resources/"+cuatro+".png"));
-        dado = new JButton(imageDado);
-        dado.setOpaque(true);
-        dado.setBorder(null);
-        dado.setContentAreaFilled(false);
-        dado.setFocusable(true);
+        dados[0] = new JButton(imageDado);
+        dados[0].setOpaque(true);
+        dados[0].setBorder(null);
+        dados[0].setContentAreaFilled(false);
+        dados[0].setFocusable(true);
 
         imageDado2 = new ImageIcon(getClass().getResource("/resources/"+cinco+".png"));
-        dado2 = new JButton(imageDado2);
-        dado2.setOpaque(true);
-        dado2.setBorder(null);
-        dado2.setContentAreaFilled(false);
-        dado2.setFocusable(true);
+        dados[1] = new JButton(imageDado2);
+        dados[1].setOpaque(true);
+        dados[1].setBorder(null);
+        dados[1].setContentAreaFilled(false);
+        dados[1].setFocusable(true);
 
         imageDado3 = new ImageIcon(getClass().getResource("/resources/"+seis+".png"));
-        dado3 = new JButton(imageDado3);
-        dado3.setOpaque(true);
-        dado3.setBorder(null);
-        dado3.setContentAreaFilled(false);
-        dado3.setFocusable(true);
+        dados[2] = new JButton(imageDado3);
+        dados[2].setOpaque(true);
+        dados[2].setBorder(null);
+        dados[2].setContentAreaFilled(false);
+        dados[2].setFocusable(true);
 
         imageDado4 = new ImageIcon(getClass().getResource("/resources/"+siete+".png"));
-        dado4 = new JButton(imageDado4);
-        dado4.setOpaque(true);
-        dado4.setBorder(null);
-        dado4.setContentAreaFilled(false);
-        dado4.setFocusable(true);
+        dados[3] = new JButton(imageDado4);
+        dados[3].setOpaque(true);
+        dados[3].setBorder(null);
+        dados[3].setContentAreaFilled(false);
+        dados[3].setFocusable(true);
 
         imageDado5 = new ImageIcon(getClass().getResource("/resources/"+ocho+".png"));
-        dado5 = new JButton(imageDado5);
-        dado5.setOpaque(true);
-        dado5.setBorder(null);
-        dado5.setContentAreaFilled(false);
-        dado5.setFocusable(true);
+        dados[4] = new JButton(imageDado5);
+        dados[4].setOpaque(true);
+        dados[4].setBorder(null);
+        dados[4].setContentAreaFilled(false);
+        dados[4].setFocusable(true);
 
         imageDado6 = new ImageIcon(getClass().getResource("/resources/"+nueve+".png"));
-        dado6 = new JButton(imageDado3);
-        dado6.setOpaque(true);
-        dado6.setBorder(null);
-        dado6.setContentAreaFilled(false);
-        dado6.setFocusable(true);
+        dados[5] = new JButton(imageDado3);
+        dados[5].setOpaque(true);
+        dados[5].setBorder(null);
+        dados[5].setContentAreaFilled(false);
+        dados[5].setFocusable(true);
 
         imageDado7 = new ImageIcon(getClass().getResource("/resources/"+diez+".png"));
-        dado7 = new JButton(imageDado7);
-        dado7.setOpaque(true);
-        dado7.setBorder(null);
-        dado7.setContentAreaFilled(false);
-        dado7.setFocusable(true);
+        dados[6] = new JButton(imageDado7);
+        dados[6].setOpaque(true);
+        dados[6].setBorder(null);
+        dados[6].setContentAreaFilled(false);
+        dados[6].setFocusable(true);
 
         panelDadosActivos = new JPanel();
         panelDadosActivos.setPreferredSize(new Dimension(450, 250));
         panelDadosActivos.setBorder(BorderFactory.createTitledBorder("Dados Activos:"));
-        panelDadosActivos.add(dado);
-        panelDadosActivos.add(dado2);
-        panelDadosActivos.add(dado3);
-        panelDadosActivos.add(dado4);
-        panelDadosActivos.add(dado5);
-        panelDadosActivos.add(dado6);
-        panelDadosActivos.add(dado7);
+        panelDadosActivos.add(dados[0]);
+        panelDadosActivos.add(dados[1]);
+        panelDadosActivos.add(dados[2]);
+        panelDadosActivos.add(dados[3]);
+        panelDadosActivos.add(dados[4]);
+        panelDadosActivos.add(dados[5]);
+        panelDadosActivos.add(dados[6]);
         constraints.gridx=0;
         constraints.gridy=2;
         constraints.gridwidth=1;
@@ -162,34 +165,42 @@ public class GUIGeek extends JFrame{
         //Panel Dados Inactivos
 
 
+
+        botones = new JButton[7];
+
         imageDadoInactivo = new ImageIcon(getClass().getResource("/resources/"+uno+".png"));
-        dadoInactivo = new JButton(imageDadoInactivo);
-        dadoInactivo.setOpaque(true);
-        dadoInactivo.setBorder(null);
-        dadoInactivo.setContentAreaFilled(false);
-        dadoInactivo.setFocusable(true);
+
+        botones[0] = new JButton(imageDadoInactivo);
+        botones[0].setOpaque(true);
+        botones[0].setBorder(null);
+        botones[0].setContentAreaFilled(false);
+        botones[0].setFocusable(true);
+
 
         imageDadoInactivo2 = new ImageIcon(getClass().getResource("/resources/"+dos+".png"));
-        dadoInactivo2 = new JButton(imageDadoInactivo2);
-        dadoInactivo2.setOpaque(true);
-        dadoInactivo2.setBorder(null);
-        dadoInactivo2.setContentAreaFilled(false);
-        dadoInactivo2.setFocusable(true);
+        botones[1] = new JButton(imageDadoInactivo2);
+        botones[1].setOpaque(true);
+        botones[1].setBorder(null);
+        botones[1].setContentAreaFilled(false);
+        botones[1].setFocusable(true);
+
 
         imageDadoInactivo3 = new ImageIcon(getClass().getResource("/resources/"+tres+".png"));
-        dadoInactivo3 = new JButton(imageDadoInactivo3);
-        dadoInactivo3.setOpaque(true);
-        dadoInactivo3.setBorder(null);
-        dadoInactivo3.setContentAreaFilled(false);
-        dadoInactivo3.setFocusable(true);
+        botones[2] = new JButton(imageDadoInactivo2);
+        botones[2].setOpaque(true);
+        botones[2].setBorder(null);
+        botones[2].setContentAreaFilled(false);
+        botones[2].setFocusable(true);
+
 
 
         panelDadosInactivos = new JPanel();
         panelDadosInactivos.setPreferredSize(new Dimension(450, 250));
         panelDadosInactivos.setBorder(BorderFactory.createTitledBorder("Dados Inactivos:"));
-        panelDadosInactivos.add(dadoInactivo);
-        panelDadosInactivos.add(dadoInactivo2);
-        panelDadosInactivos.add(dadoInactivo3);
+        panelDadosInactivos.add(botones[0]);
+        panelDadosInactivos.add(botones[1]);
+        panelDadosInactivos.add(botones[2]);
+
         //panelDadosInactivos.setBackground();
         constraints.gridx=0;
         constraints.gridy=3;
@@ -279,6 +290,9 @@ public class GUIGeek extends JFrame{
                     System.exit(0);
                 }
             }
+
+
+
         }
     }
 }
