@@ -8,14 +8,12 @@ import java.util.Random;
 public class GUIGeek extends JFrame{
     public static final String MENSAJE_INICIO="PROBANDO";
     private Header headerProject;
-   // private JLabel dado_label, dado_label2, dado_label3, dado_label4, dado_label5, dado_label6, dado_label7, dado_label8, dado_label9, dado_label10, dados_activos, dados_inactivos, dados_usados, tarjeton_puntaje;
     private JButton tirar, salir,ayuda,dado,dado2, dado3, dado4, dado5, dado6, dado7, dado8, dado9, dado10, dadoInactivo, dadoInactivo2, dadoInactivo3;
     private JPanel panelDadosActivos, panelDadosInactivos, panelDadosUsados, panelPuntuacion;
     private ImageIcon imageDado, imageDado2, imageDado3,imageDado4, imageDado5, imageDado6, imageDado7, imageDado8, imageDado9, imageDado10, imageDadoInactivo, imageDadoInactivo2, imageDadoInactivo3;
     private GUIGeek.Escucha escucha;
     private JSeparator separator;
     private ModelGeek modelGeek;
-
 
 
     public GUIGeek() {
@@ -31,11 +29,7 @@ public class GUIGeek extends JFrame{
     }
 
 
-
-
     public void initGUI() {
-
-
 
         this.getContentPane().setLayout(new GridBagLayout());
         GridBagConstraints constraints = new GridBagConstraints();
@@ -49,22 +43,6 @@ public class GUIGeek extends JFrame{
         constraints.gridwidth=3;
         constraints.fill=GridBagConstraints.HORIZONTAL;
         this.add(headerProject,constraints);
-
-        /** imageDragon = new ImageIcon(getClass().getResource("/resources/Dragon.png"));
-         imageHeroe = new ImageIcon(getClass().getResource("/resources/Superheroe.png"));
-         imageCorazon = new ImageIcon(getClass().getResource("/resources/Corazon.png"));
-         imageMeple = new ImageIcon(getClass().getResource("/resources/Meple.png"));
-         imageNave = new ImageIcon(getClass().getResource("/resources/Cohete.png"));
-         imagePunto = new ImageIcon(getClass().getResource("/resources/42.png"));
-         dragon_lab = new JLabel(imageDragon);
-         nave_lab = new JLabel(imageNave);
-         meple_lab = new JLabel(imageMeple);
-         puntos_lab = new JLabel(imagePunto);
-         heroe_lab = new JLabel(imageHeroe);
-         corazon_lab = new JLabel(imageCorazon);
-         activos = new ImageIcon(getClass().getResource("/resources/dados_inactivo2s.png"));
-         dados_activos = new JLabel(activos);
-         */
 
         //Boton ayuda
 
@@ -113,8 +91,7 @@ public class GUIGeek extends JFrame{
         int nueve = ran.nextInt(max_val) + min_val;
         int diez = ran.nextInt(max_val) + min_val;
 
-
-
+        //Panel dados Activos
 
         imageDado = new ImageIcon(getClass().getResource("/resources/"+cuatro+".png"));
         dado = new JButton(imageDado);
@@ -165,12 +142,6 @@ public class GUIGeek extends JFrame{
         dado7.setContentAreaFilled(false);
         dado7.setFocusable(true);
 
-
-
-
-
-
-        //Panel dados Activos
         panelDadosActivos = new JPanel();
         panelDadosActivos.setPreferredSize(new Dimension(450, 250));
         panelDadosActivos.setBorder(BorderFactory.createTitledBorder("Dados Activos:"));
@@ -187,14 +158,8 @@ public class GUIGeek extends JFrame{
         constraints.fill=GridBagConstraints.BOTH;
         constraints.anchor=GridBagConstraints.CENTER;
         add(panelDadosActivos, constraints);
-        //panelDadosActivos.add(dados_activos);
 
-
-        //inactivos = new ImageIcon(getClass().getResource("/resources/dados_inactivo2s.png"));
-        //dados_inactivos = new JLabel(inactivos);
-
-
-
+        //Panel Dados Inactivos
 
 
         imageDadoInactivo = new ImageIcon(getClass().getResource("/resources/"+uno+".png"));
@@ -219,9 +184,6 @@ public class GUIGeek extends JFrame{
         dadoInactivo3.setFocusable(true);
 
 
-
-
-
         panelDadosInactivos = new JPanel();
         panelDadosInactivos.setPreferredSize(new Dimension(450, 250));
         panelDadosInactivos.setBorder(BorderFactory.createTitledBorder("Dados Inactivos:"));
@@ -237,11 +199,9 @@ public class GUIGeek extends JFrame{
 
 
         add(panelDadosInactivos, constraints);
-        // panelDadosInactivos.add();
 
 
-        /*usados = new ImageIcon(getClass().getResource("/resources/dados_utilizados.png"));
-        dados_usados = new JLabel(usados);*/
+        //Panel Dados Usados
 
         panelDadosUsados = new JPanel();
         panelDadosUsados.setPreferredSize(new Dimension(450, 250));
@@ -253,11 +213,8 @@ public class GUIGeek extends JFrame{
         constraints.fill=GridBagConstraints.BOTH;
         constraints.anchor=GridBagConstraints.CENTER;
         add(panelDadosUsados, constraints);
-        // panelDadosUsados.add();
 
-
-        /*tarjeton = new ImageIcon(getClass().getResource("/resources/Tarjeton-puntajes.png"));
-        tarjeton_puntaje = new JLabel(tarjeton);*/
+        //Panel Puntuacion
 
         panelPuntuacion = new JPanel();
         panelPuntuacion.setPreferredSize(new Dimension(450, 250));
@@ -314,8 +271,6 @@ public class GUIGeek extends JFrame{
                 imageDado10 = new ImageIcon(getClass().getResource("/resources/"+caras[1]+".png"));
                 dado10.setIcon(imageDado10);
     */
-
-
             }
             else {
                 if (e.getSource() == ayuda){
