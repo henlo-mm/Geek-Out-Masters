@@ -5,6 +5,7 @@ import java.util.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
+import javax.swing.border.TitledBorder;
 import java.util.Random;
 public class GUIGeek extends JFrame{
     public static final String MENSAJE_INICIO="PROBANDO";
@@ -19,6 +20,7 @@ public class GUIGeek extends JFrame{
     private JSeparator separator;
     private ModelGeek modelGeek;
     int uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez;
+    private TitledBorder titledBorder;
 
 
     public GUIGeek() {
@@ -161,10 +163,12 @@ public class GUIGeek extends JFrame{
         dados[6].setFocusable(true);
 
         //Panel Dados Activos
-
+        TitledBorder border = BorderFactory.createTitledBorder("Dados Activos:");
+        border.setTitleColor(new Color(252, 252, 252));
         panelDadosActivos = new JPanel();
         panelDadosActivos.setPreferredSize(new Dimension(450, 250));
-        panelDadosActivos.setBorder(BorderFactory.createTitledBorder("Dados Activos:"));
+        panelDadosActivos.setBorder(border);
+        panelDadosActivos.setBackground(new Color(12, 30, 127));
         panelDadosActivos.add(dados[0]);
         panelDadosActivos.add(dados[1]);
         panelDadosActivos.add(dados[2]);
@@ -209,7 +213,6 @@ public class GUIGeek extends JFrame{
         panelDadosInactivos.add(botones[0]);
         panelDadosInactivos.add(botones[1]);
         panelDadosInactivos.add(botones[2]);
-        //panelDadosInactivos.setBackground();
         constraints.gridx=0;
         constraints.gridy=3;
         constraints.gridwidth=1;
