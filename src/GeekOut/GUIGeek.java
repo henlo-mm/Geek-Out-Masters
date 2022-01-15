@@ -82,95 +82,87 @@ public class GUIGeek extends JFrame{
         constraints.anchor=GridBagConstraints.LINE_END;
         this.add(salir,constraints);
 
+        //Generación de números random entre 0 y 6 para listar las imágenes
 
-
-        int min_val = 1;
-        int max_val = 6;
         Random ran = new Random();
 
-        uno = ran.nextInt(max_val) + min_val;
-        dos = ran.nextInt(max_val) + min_val;
-        tres = ran.nextInt(max_val) + min_val;
-        cuatro = ran.nextInt(max_val) + min_val;
-        cinco = ran.nextInt(max_val) + min_val;
-        seis = ran.nextInt(max_val) + min_val;
-        siete = ran.nextInt(max_val) + min_val;
-        ocho = ran.nextInt(max_val) + min_val;
-        nueve = ran.nextInt(max_val) + min_val;
-        diez = ran.nextInt(max_val) + min_val;
+        uno = ran.nextInt(5) + 1;
+        dos = ran.nextInt(5) + 1;
+        tres = ran.nextInt(5) + 1;
+        cuatro = ran.nextInt(5) + 1;
+        cinco = ran.nextInt(5) + 1;
+        seis = ran.nextInt(5) + 1;
+        siete = ran.nextInt(5) + 1;
+        ocho = ran.nextInt(5) + 1;
+        nueve = ran.nextInt(5) + 1;
+        diez = ran.nextInt(5) + 1;
 
-
-
-        //Panel dados Activos
-        dados = new JButton[7];
-
-        imageDado = new ImageIcon(getClass().getResource("/resources/"+cuatro+".png"));
-        dados[0] = new JButton(imageDado);
-        dados[0].setOpaque(true);
-        dados[0].setBorder(null);
-        dados[0].setContentAreaFilled(false);
-        dados[0].setFocusable(true);
-
-
-
-        imageDado2 = new ImageIcon(getClass().getResource("/resources/"+cinco+".png"));
-        dados[1] = new JButton(imageDado2);
-        dados[1].setOpaque(true);
-        dados[1].setBorder(null);
-        dados[1].setContentAreaFilled(false);
-        dados[1].setFocusable(true);
-
-        imageDado3 = new ImageIcon(getClass().getResource("/resources/"+seis+".png"));
-        dados[2] = new JButton(imageDado3);
-        dados[2].setOpaque(true);
-        dados[2].setBorder(null);
-        dados[2].setContentAreaFilled(false);
-        dados[2].setFocusable(true);
-
-        imageDado4 = new ImageIcon(getClass().getResource("/resources/"+siete+".png"));
-        dados[3] = new JButton(imageDado4);
-        dados[3].setOpaque(true);
-        dados[3].setBorder(null);
-        dados[3].setContentAreaFilled(false);
-        dados[3].setFocusable(true);
-
-        imageDado5 = new ImageIcon(getClass().getResource("/resources/"+ocho+".png"));
-        dados[4] = new JButton(imageDado5);
-        dados[4].setOpaque(true);
-        dados[4].setBorder(null);
-        dados[4].setContentAreaFilled(false);
-        dados[4].setFocusable(true);
-
-        imageDado6 = new ImageIcon(getClass().getResource("/resources/"+nueve+".png"));
-        dados[5] = new JButton(imageDado6);
-        dados[5].setOpaque(true);
-        dados[5].setBorder(null);
-        dados[5].setContentAreaFilled(false);
-        dados[5].setFocusable(true);
-
-        /**
+        //Arralist de imagenes
         imagenes = new ArrayList<ImageIcon>();
-        imageDado6 = new ImageIcon(getClass().getResource("/resources/"+nueve+".png"));
 
-        dado = new ImageIcon(getClass().getResource("/resources/1.png"));
+        //Imagenes
+        imageDado = new ImageIcon(getClass().getResource("/resources/0.png"));
+        imageDado2 = new ImageIcon(getClass().getResource("/resources/1.png"));
+        imageDado3 = new ImageIcon(getClass().getResource("/resources/2.png"));
+        imageDado4 = new ImageIcon(getClass().getResource("/resources/3.png"));
+        imageDado5 = new ImageIcon(getClass().getResource("/resources/4.png"));
+        imageDado6 = new ImageIcon(getClass().getResource("/resources/5.png"));
 
+        //Añade las imágenes al array
         imagenes.add(imageDado);
-        imagenes.add(dado);
         imagenes.add(imageDado2);
         imagenes.add(imageDado3);
         imagenes.add(imageDado4);
         imagenes.add(imageDado5);
         imagenes.add(imageDado6);
-        imagenes.add(imageDado7);*/
 
-        imageDado7 = new ImageIcon(getClass().getResource("/resources/"+diez+".png"));
-        dados[6] = new JButton(imageDado7);
+        //Array de Dados Activos
+
+        dados = new JButton[7];
+
+        dados[0] = new JButton(imagenes.get(cuatro));
+        dados[0].setOpaque(true);
+        dados[0].setBorder(null);
+        dados[0].setContentAreaFilled(false);
+        dados[0].setFocusable(true);
+
+        dados[1] = new JButton(imagenes.get(cinco));
+        dados[1].setOpaque(true);
+        dados[1].setBorder(null);
+        dados[1].setContentAreaFilled(false);
+        dados[1].setFocusable(true);
+
+        dados[2] = new JButton(imagenes.get(seis));
+        dados[2].setOpaque(true);
+        dados[2].setBorder(null);
+        dados[2].setContentAreaFilled(false);
+        dados[2].setFocusable(true);
+
+        dados[3] = new JButton(imagenes.get(siete));
+        dados[3].setOpaque(true);
+        dados[3].setBorder(null);
+        dados[3].setContentAreaFilled(false);
+        dados[3].setFocusable(true);
+
+        dados[4] = new JButton(imagenes.get(ocho));
+        dados[4].setOpaque(true);
+        dados[4].setBorder(null);
+        dados[4].setContentAreaFilled(false);
+        dados[4].setFocusable(true);
+
+        dados[5] = new JButton(imagenes.get(nueve));
+        dados[5].setOpaque(true);
+        dados[5].setBorder(null);
+        dados[5].setContentAreaFilled(false);
+        dados[5].setFocusable(true);
+
+        dados[6] = new JButton(imagenes.get(diez));
         dados[6].setOpaque(true);
         dados[6].setBorder(null);
         dados[6].setContentAreaFilled(false);
         dados[6].setFocusable(true);
 
-
+        //Panel Dados Activos
 
         panelDadosActivos = new JPanel();
         panelDadosActivos.setPreferredSize(new Dimension(450, 250));
@@ -189,37 +181,29 @@ public class GUIGeek extends JFrame{
         constraints.anchor=GridBagConstraints.CENTER;
         add(panelDadosActivos, constraints);
 
-        //Panel Dados Inactivos
+        //Array de botones de Dados Inactivos
 
+        botones = new JButton[3];
 
-
-        botones = new JButton[7];
-
-        imageDadoInactivo = new ImageIcon(getClass().getResource("/resources/"+uno+".png"));
-
-        botones[0] = new JButton(imageDadoInactivo);
+        botones[0] = new JButton(imagenes.get(uno));
         botones[0].setOpaque(true);
         botones[0].setBorder(null);
         botones[0].setContentAreaFilled(false);
         botones[0].setFocusable(true);
 
-
-        imageDadoInactivo2 = new ImageIcon(getClass().getResource("/resources/"+dos+".png"));
-        botones[1] = new JButton(imageDadoInactivo2);
+        botones[1] = new JButton(imagenes.get(dos));
         botones[1].setOpaque(true);
         botones[1].setBorder(null);
         botones[1].setContentAreaFilled(false);
         botones[1].setFocusable(true);
 
-
-        imageDadoInactivo3 = new ImageIcon(getClass().getResource("/resources/"+tres+".png"));
-        botones[2] = new JButton(imageDadoInactivo2);
+        botones[2] = new JButton(imagenes.get(tres));
         botones[2].setOpaque(true);
         botones[2].setBorder(null);
         botones[2].setContentAreaFilled(false);
         botones[2].setFocusable(true);
 
-
+        //Panel Dados Inactivos
 
         panelDadosInactivos = new JPanel();
         panelDadosInactivos.setPreferredSize(new Dimension(450, 250));
@@ -234,8 +218,6 @@ public class GUIGeek extends JFrame{
         constraints.gridwidth=1;
         constraints.fill=GridBagConstraints.BOTH;
         constraints.anchor=GridBagConstraints.CENTER;
-
-
         add(panelDadosInactivos, constraints);
 
 
@@ -280,25 +262,25 @@ public class GUIGeek extends JFrame{
         }
 
         public void actionPerformed(ActionEvent e) {
-            if(uno == 1){
+            if(uno == 0){
                 System.out.println("todo salio good");
 
-            }else if(uno == 2){
+            }else if(uno == 1){
                 System.out.println("todo salio good2");
 
-            }else if (uno == 3){
+            }else if (uno == 2){
                 System.out.println("todo salio good3");
 
-            }else if(uno == 4){
+            }else if(uno == 3){
                 System.out.println("todo salio good4");
 
-            }else if(uno == 5){
+            }else if(uno == 4){
                 System.out.println("todo salio good5");
 
-            }else if(uno == 6){
+            }else if(uno == 5){
                 System.out.println("todo salio good6");
 
-            }else if(uno == 7){
+            }else if(uno == 6){
                 System.out.println("todo salio good7");
 
             }
