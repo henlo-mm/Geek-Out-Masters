@@ -11,5 +11,6 @@ public class Header extends JLabel{
         this.setFont(new Font(Font.DIALOG, Font.BOLD, 20));
         this.setHorizontalAlignment(JLabel.CENTER);
         this.setVerticalAlignment(JLabel.CENTER);
+        setOpaque(true);
     }
 }
