@@ -13,10 +13,9 @@ public class GUIGeek extends JFrame{
     private  JButton[] dados;
     private JButton[] botones;
     private JPanel panelDadosActivos, panelDadosInactivos, panelDadosUsados, panelPuntuacion;
-    private ImageIcon dado, imageDado, imageDado2, imageDado3,imageDado4, imageDado5, imageDado6, imageDado7, imageDado8, imageDado9, imageDado10, imageDadoInactivo, imageDadoInactivo2, imageDadoInactivo3;
+    private ImageIcon imageDado, imageDado2, imageDado3,imageDado4, imageDado5, imageDado6;
     private GUIGeek.Escucha escucha;
-    private ImageIcon[] imagenesDados;
-    ArrayList<ImageIcon>    imagenes;
+    ArrayList<ImageIcon> imagenes;
     private JSeparator separator;
     private ModelGeek modelGeek;
     int uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez;
@@ -51,7 +50,6 @@ public class GUIGeek extends JFrame{
         this.add(headerProject,constraints);
 
         //Boton ayuda
-
 
         ayuda = new JButton(" ? ");
         ayuda.addActionListener(escucha);
@@ -211,7 +209,6 @@ public class GUIGeek extends JFrame{
         panelDadosInactivos.add(botones[0]);
         panelDadosInactivos.add(botones[1]);
         panelDadosInactivos.add(botones[2]);
-
         //panelDadosInactivos.setBackground();
         constraints.gridx=0;
         constraints.gridy=3;
@@ -219,7 +216,6 @@ public class GUIGeek extends JFrame{
         constraints.fill=GridBagConstraints.BOTH;
         constraints.anchor=GridBagConstraints.CENTER;
         add(panelDadosInactivos, constraints);
-
 
         //Panel Dados Usados
 
@@ -256,7 +252,6 @@ public class GUIGeek extends JFrame{
         });
     }
 
-
     private class Escucha implements ActionListener {
         private Escucha() {
         }
@@ -286,33 +281,6 @@ public class GUIGeek extends JFrame{
             }
             if (e.getSource() == tirar) {
                 System.out.println("todo salio good");
-
-                /**int[] caras = modelGeek.getCaras();
-
-
-
-
-                imageDado = new ImageIcon(getClass().getResource("/resources/"+caras[1]+".png"));
-                dado.setIcon(imageDado);
-                imageDado2 = new ImageIcon(getClass().getResource("/resources/"+caras[1]+".png"));
-                dado2.setIcon(imageDado2);
-                imageDado3 = new ImageIcon(getClass().getResource("/resources/"+caras[1]+".png"));
-                dado3.setIcon(imageDado3);
-                imageDado4 = new ImageIcon(getClass().getResource("/resources/"+caras[1]+".png"));
-                dado4.setIcon(imageDado4);
-                imageDado5 = new ImageIcon(getClass().getResource("/resources/"+caras[1]+"png"));
-                dado5.setIcon(imageDado5);
-                imageDado6 = new ImageIcon(getClass().getResource("/resources/"+caras[1]+".png"));
-                dado6.setIcon(imageDado6);
-                imageDado7 = new ImageIcon(getClass().getResource("/resources/"+caras[1]+".png"));
-                dado7.setIcon(imageDado7);
-                imageDado8 = new ImageIcon(getClass().getResource("/resources/"+caras[1]+".png"));
-                dado8.setIcon(imageDado8);
-                imageDado9 = new ImageIcon(getClass().getResource("/resources/"+caras[1]+".png"));
-                dado8.setIcon(imageDado9);
-                imageDado10 = new ImageIcon(getClass().getResource("/resources/"+caras[1]+".png"));
-                dado10.setIcon(imageDado10);
-    */
             }
             else {
                 if (e.getSource() == ayuda){
@@ -321,10 +289,6 @@ public class GUIGeek extends JFrame{
                     System.exit(0);
                 }
             }
-
-
-
-
         }
     }
 }
