@@ -163,7 +163,7 @@ public class GUIGeek extends JFrame{
         dados[6].setFocusable(true);
 
         //Panel Dados Activos
-        TitledBorder border = BorderFactory.createTitledBorder("Dados Activos:");
+        TitledBorder border = BorderFactory.createTitledBorder("DADOS ACTIVOS:");
         border.setTitleColor(new Color(252, 252, 252));
         panelDadosActivos = new JPanel();
         panelDadosActivos.setPreferredSize(new Dimension(450, 250));
