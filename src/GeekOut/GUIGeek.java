@@ -25,7 +25,7 @@ public class GUIGeek extends JFrame{
 
     public GUIGeek() {
         this.initGUI();
-        this.setTitle("GeekOutMasters");
+        this.setTitle("Geek Out Masters");
         setUndecorated(true);
         //this.setSize(1000, 400);
         this.pack();
@@ -44,7 +44,7 @@ public class GUIGeek extends JFrame{
         //Create Listener Object or Control Object
         escucha = new Escucha();
         modelGeek = new ModelGeek();
-        headerProject = new Header("Geek Out", new Color(88, 0, 255));
+        headerProject = new Header("GEEK OUT MASTERS", new Color(68, 68, 68));
         constraints.gridx=0;
         constraints.gridy=0;
         constraints.gridwidth=3;
