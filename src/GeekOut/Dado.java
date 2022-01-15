@@ -9,11 +9,17 @@ public class Dado {
     private int corazon;
     private int puntos;
     private int meple;
+    private int caraDado;
 
     public Dado() {
     }
+    public int getCara() {
+        Random aleatorio = new Random();
+        this.caraDado = aleatorio.nextInt(6) + 1;
+        return this.caraDado;
+    }
 
-    public int getCorazon() {
+  /**  public int getCorazon() {
         Random aleatorio = new Random();
         this.corazon = aleatorio.nextInt(2) + 1;
         return this.corazon;
@@ -48,4 +54,5 @@ public class Dado {
         this.puntos = aleatorio.nextInt(2) + 1;
         return this.puntos;
     }
+    */
 }
