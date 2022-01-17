@@ -271,63 +271,275 @@ public class GUIGeek extends JFrame{
     private class Escucha implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
+            //Primer dado activo
             if(e.getSource() == dados[0] && cuatro == 0){
                 panelDadosActivos.remove(dados[0]);
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[0]);
                 panelDadosUsados.repaint();
-                System.out.println("todo salio good ?");
-
-
             }else if(e.getSource() == dados[0] && cuatro == 1){
                 panelDadosActivos.remove(dados[0]);
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[0]);
                 panelDadosUsados.repaint();
-                System.out.println("todo salio good2");
-
             }else if (e.getSource() == dados[0] && cuatro == 2){
                 panelDadosActivos.remove(dados[0]);
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[0]);
                 panelDadosUsados.repaint();
-                System.out.println("todo salio good3");
-
             }else if(e.getSource() == dados[0] && cuatro == 3){
                 panelDadosActivos.remove(dados[0]);
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[0]);
                 panelDadosUsados.repaint();
-                System.out.println("todo salio good4");
-
             }else if(e.getSource() == dados[0] && cuatro == 4){
                 panelDadosActivos.remove(dados[0]);
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[0]);
                 panelDadosUsados.repaint();
-                System.out.println("todo salio good5");
-
             }else if(e.getSource() == dados[0] && cuatro == 5){
                 panelDadosActivos.remove(dados[0]);
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[0]);
                 panelDadosUsados.repaint();
-                System.out.println("todo salio good6");
-
             }else if(e.getSource() == dados[0] && cuatro == 6){
                 panelDadosActivos.remove(dados[0]);
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[0]);
                 panelDadosUsados.repaint();
-                System.out.println("todo salio good7");
-
-            }else {
-                if (e.getSource() == ayuda){
-                    JOptionPane.showMessageDialog(null, MENSAJE_INICIO);
-                }else{
-                    System.exit(0);
-                }
             }
+            //Segundo dado activo
+            if(e.getSource() == dados[1] && cinco == 0){
+                panelDadosActivos.remove(dados[1]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[1]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == dados[1] && cinco == 1){
+                panelDadosActivos.remove(dados[1]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[1]);
+                panelDadosUsados.repaint();
+            }else if (e.getSource() == dados[1] && cinco == 2){
+                panelDadosActivos.remove(dados[1]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[1]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == dados[1] && cinco == 3){
+                panelDadosActivos.remove(dados[1]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[1]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == dados[1] && cinco == 4){
+                panelDadosActivos.remove(dados[1]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[1]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == dados[1] && cinco == 5){
+                panelDadosActivos.remove(dados[1]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[1]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == dados[1] && cinco == 6){
+                panelDadosActivos.remove(dados[1]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[1]);
+                panelDadosUsados.repaint();
+            }
+            //Tercer dado activo
+            if(e.getSource() == dados[2] && seis == 0){
+                panelDadosActivos.remove(dados[2]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[2]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == dados[2] && seis == 1){
+                panelDadosActivos.remove(dados[2]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[2]);
+                panelDadosUsados.repaint();
+            }else if (e.getSource() == dados[2] && seis == 2){
+                panelDadosActivos.remove(dados[2]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[2]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == dados[2] && seis == 3){
+                panelDadosActivos.remove(dados[2]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[2]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == dados[2] && seis == 4){
+                panelDadosActivos.remove(dados[2]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[2]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == dados[2] && seis == 5){
+                panelDadosActivos.remove(dados[2]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[2]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == dados[2] && seis == 6){
+                panelDadosActivos.remove(dados[2]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[2]);
+                panelDadosUsados.repaint();
+            }
+            //Cuarto dado activo
+            if(e.getSource() == dados[3] && siete == 0){
+                panelDadosActivos.remove(dados[3]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[3]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == dados[3] && siete == 1){
+                panelDadosActivos.remove(dados[3]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[3]);
+                panelDadosUsados.repaint();
+            }else if (e.getSource() == dados[3] && siete == 2){
+                panelDadosActivos.remove(dados[3]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[3]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == dados[3] && siete == 3){
+                panelDadosActivos.remove(dados[3]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[3]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == dados[3] && siete == 4){
+                panelDadosActivos.remove(dados[3]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[3]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == dados[3] && siete == 5){
+                panelDadosActivos.remove(dados[3]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[3]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == dados[3] && siete == 6){
+                panelDadosActivos.remove(dados[3]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[3]);
+                panelDadosUsados.repaint();
+            }
+            //Quinto dado activo
+            if(e.getSource() == dados[4] && ocho == 0){
+                panelDadosActivos.remove(dados[4]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[4]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == dados[4] && ocho == 1){
+                panelDadosActivos.remove(dados[4]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[4]);
+                panelDadosUsados.repaint();
+            }else if (e.getSource() == dados[4] && ocho == 2){
+                panelDadosActivos.remove(dados[4]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[4]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == dados[4] && ocho == 3){
+                panelDadosActivos.remove(dados[4]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[4]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == dados[4] && ocho == 4){
+                panelDadosActivos.remove(dados[4]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[4]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == dados[4] && ocho == 5){
+                panelDadosActivos.remove(dados[4]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[4]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == dados[4] && ocho == 6){
+                panelDadosActivos.remove(dados[4]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[4]);
+                panelDadosUsados.repaint();
+            }
+            //Sexto dado activo
+            if(e.getSource() == dados[5] && nueve == 0){
+                panelDadosActivos.remove(dados[5]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[5]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == dados[5] && nueve == 1){
+                panelDadosActivos.remove(dados[5]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[5]);
+                panelDadosUsados.repaint();
+            }else if (e.getSource() == dados[5] && nueve == 2){
+                panelDadosActivos.remove(dados[5]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[5]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == dados[5] && nueve == 3){
+                panelDadosActivos.remove(dados[5]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[5]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == dados[5] && nueve == 4){
+                panelDadosActivos.remove(dados[5]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[5]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == dados[5] && nueve == 5){
+                panelDadosActivos.remove(dados[5]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[5]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == dados[5] && nueve == 6){
+                panelDadosActivos.remove(dados[5]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[5]);
+                panelDadosUsados.repaint();
+            }
+            //Séptimo dado activo
+            if(e.getSource() == dados[6] && diez == 0){
+                panelDadosActivos.remove(dados[6]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[6]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == dados[6] && diez == 1){
+                panelDadosActivos.remove(dados[6]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[6]);
+                panelDadosUsados.repaint();
+                System.out.println("todo salio good2");
+            }else if (e.getSource() == dados[6] && diez == 2){
+                panelDadosActivos.remove(dados[6]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[6]);
+                panelDadosUsados.repaint();
+                System.out.println("todo salio good3");
+            }else if(e.getSource() == dados[6] && diez == 3){
+                panelDadosActivos.remove(dados[6]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[6]);
+                panelDadosUsados.repaint();
+                System.out.println("todo salio good4");
+            }else if(e.getSource() == dados[6] && diez == 4){
+                panelDadosActivos.remove(dados[6]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[6]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == dados[6] && diez == 5){
+                panelDadosActivos.remove(dados[6]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[6]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == dados[6] && diez == 6) {
+                panelDadosActivos.remove(dados[6]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[6]);
+                panelDadosUsados.repaint();
+            }
+            if (e.getSource() == salir){
+                System.exit(0);
+            }
+            if (e.getSource() == ayuda){
+                JOptionPane.showMessageDialog(null, MENSAJE_INICIO);
+            }
+
         }
     }
 }
