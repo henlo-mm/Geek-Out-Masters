@@ -260,7 +260,6 @@ public class GUIGeek extends JFrame{
         constraints.anchor=GridBagConstraints.CENTER;
         add(panelPuntuacion, constraints);
         //panelPuntuacion.add();
-
     }
 
     public static void main(String[] args) {
@@ -273,24 +272,51 @@ public class GUIGeek extends JFrame{
 
         public void actionPerformed(ActionEvent e) {
             if(e.getSource() == dados[0] && cuatro == 0){
+                panelDadosActivos.remove(dados[0]);
+                panelDadosActivos.repaint();
                 System.out.println("todo salio good ?");
 
+
             }else if(e.getSource() == dados[0] && cuatro == 1){
+                panelDadosActivos.remove(dados[0]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[0]);
+                panelDadosUsados.repaint();
                 System.out.println("todo salio good2");
 
             }else if (e.getSource() == dados[0] && cuatro == 2){
+                panelDadosActivos.remove(dados[0]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[0]);
+                panelDadosUsados.repaint();
                 System.out.println("todo salio good3");
 
             }else if(e.getSource() == dados[0] && cuatro == 3){
+                panelDadosActivos.remove(dados[0]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[0]);
+                panelDadosUsados.repaint();
                 System.out.println("todo salio good4");
 
             }else if(e.getSource() == dados[0] && cuatro == 4){
+                panelDadosActivos.remove(dados[0]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[0]);
+                panelDadosUsados.repaint();
                 System.out.println("todo salio good5");
 
             }else if(e.getSource() == dados[0] && cuatro == 5){
+                panelDadosActivos.remove(dados[0]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[0]);
+                panelDadosUsados.repaint();
                 System.out.println("todo salio good6");
 
             }else if(e.getSource() == dados[0] && cuatro == 6){
+                panelDadosActivos.remove(dados[0]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[0]);
+                panelDadosUsados.repaint();
                 System.out.println("todo salio good7");
 
             }else {
