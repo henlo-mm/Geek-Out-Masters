@@ -202,22 +202,28 @@ public class GUIGeek extends JFrame{
         botones = new JButton[3];
 
         botones[0] = new JButton(imagenes.get(uno));
+        botones[0].addActionListener(escucha);
         botones[0].setOpaque(true);
         botones[0].setBorder(null);
         botones[0].setContentAreaFilled(false);
         botones[0].setFocusable(true);
+        botones[0].setEnabled(false);
 
         botones[1] = new JButton(imagenes.get(dos));
+        botones[1].addActionListener(escucha);
         botones[1].setOpaque(true);
         botones[1].setBorder(null);
         botones[1].setContentAreaFilled(false);
         botones[1].setFocusable(true);
+        botones[1].setEnabled(false);
 
         botones[2] = new JButton(imagenes.get(tres));
+        botones[2].addActionListener(escucha);
         botones[2].setOpaque(true);
         botones[2].setBorder(null);
         botones[2].setContentAreaFilled(false);
         botones[2].setFocusable(true);
+        botones[2].setEnabled(false);
 
         //Panel Dados Inactivos
 
@@ -302,6 +308,9 @@ public class GUIGeek extends JFrame{
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[0]);
                 panelDadosUsados.repaint();
+                botones[0].setEnabled(true);
+                botones[1].setEnabled(true);
+                botones[2].setEnabled(true);
             }else if(e.getSource() == dados[0] && cuatro == 6){
                 panelDadosActivos.remove(dados[0]);
                 panelDadosActivos.repaint();
@@ -339,6 +348,9 @@ public class GUIGeek extends JFrame{
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[1]);
                 panelDadosUsados.repaint();
+                botones[0].setEnabled(true);
+                botones[1].setEnabled(true);
+                botones[2].setEnabled(true);
             }else if(e.getSource() == dados[1] && cinco == 6){
                 panelDadosActivos.remove(dados[1]);
                 panelDadosActivos.repaint();
@@ -376,6 +388,9 @@ public class GUIGeek extends JFrame{
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[2]);
                 panelDadosUsados.repaint();
+                botones[0].setEnabled(true);
+                botones[1].setEnabled(true);
+                botones[2].setEnabled(true);
             }else if(e.getSource() == dados[2] && seis == 6){
                 panelDadosActivos.remove(dados[2]);
                 panelDadosActivos.repaint();
@@ -413,6 +428,9 @@ public class GUIGeek extends JFrame{
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[3]);
                 panelDadosUsados.repaint();
+                botones[0].setEnabled(true);
+                botones[1].setEnabled(true);
+                botones[2].setEnabled(true);
             }else if(e.getSource() == dados[3] && siete == 6){
                 panelDadosActivos.remove(dados[3]);
                 panelDadosActivos.repaint();
@@ -450,6 +468,9 @@ public class GUIGeek extends JFrame{
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[4]);
                 panelDadosUsados.repaint();
+                botones[0].setEnabled(true);
+                botones[1].setEnabled(true);
+                botones[2].setEnabled(true);
             }else if(e.getSource() == dados[4] && ocho == 6){
                 panelDadosActivos.remove(dados[4]);
                 panelDadosActivos.repaint();
@@ -487,6 +508,9 @@ public class GUIGeek extends JFrame{
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[5]);
                 panelDadosUsados.repaint();
+                botones[0].setEnabled(true);
+                botones[1].setEnabled(true);
+                botones[2].setEnabled(true);
             }else if(e.getSource() == dados[5] && nueve == 6){
                 panelDadosActivos.remove(dados[5]);
                 panelDadosActivos.repaint();
@@ -504,19 +528,16 @@ public class GUIGeek extends JFrame{
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[6]);
                 panelDadosUsados.repaint();
-                System.out.println("todo salio good2");
             }else if (e.getSource() == dados[6] && diez == 2){
                 panelDadosActivos.remove(dados[6]);
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[6]);
                 panelDadosUsados.repaint();
-                System.out.println("todo salio good3");
             }else if(e.getSource() == dados[6] && diez == 3){
                 panelDadosActivos.remove(dados[6]);
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[6]);
                 panelDadosUsados.repaint();
-                System.out.println("todo salio good4");
             }else if(e.getSource() == dados[6] && diez == 4){
                 panelDadosActivos.remove(dados[6]);
                 panelDadosActivos.repaint();
@@ -527,12 +548,128 @@ public class GUIGeek extends JFrame{
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[6]);
                 panelDadosUsados.repaint();
+                botones[0].setEnabled(true);
+                botones[1].setEnabled(true);
+                botones[2].setEnabled(true);
             }else if(e.getSource() == dados[6] && diez == 6) {
                 panelDadosActivos.remove(dados[6]);
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[6]);
                 panelDadosUsados.repaint();
             }
+            //Primer dado inactivo
+            if(e.getSource() == botones[0] && uno == 0){
+                panelDadosInactivos.remove(botones[0]);
+                panelDadosInactivos.repaint();
+                panelDadosUsados.add(botones[0]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == botones[0] && uno == 1){
+                panelDadosInactivos.remove(botones[0]);
+                panelDadosInactivos.repaint();
+                panelDadosUsados.add(botones[0]);
+                panelDadosUsados.repaint();
+            }else if (e.getSource() == botones[0] && uno == 2){
+                panelDadosInactivos.remove(botones[0]);
+                panelDadosInactivos.repaint();
+                panelDadosUsados.add(botones[0]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == botones[0] && uno == 3){
+                panelDadosInactivos.remove(botones[0]);
+                panelDadosInactivos.repaint();
+                panelDadosUsados.add(botones[0]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == botones[0] && uno == 4){
+                panelDadosInactivos.remove(botones[0]);
+                panelDadosInactivos.repaint();
+                panelDadosUsados.add(botones[0]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == botones[0] && uno == 5){
+                panelDadosInactivos.remove(botones[0]);
+                panelDadosInactivos.repaint();
+                panelDadosUsados.add(botones[0]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == botones[0] && uno == 6){
+                panelDadosInactivos.remove(botones[0]);
+                panelDadosInactivos.repaint();
+                panelDadosUsados.add(botones[0]);
+                panelDadosUsados.repaint();
+            }
+            //Segundo dado activo
+            if(e.getSource() == botones[1] && dos == 0){
+                panelDadosInactivos.remove(botones[0]);
+                panelDadosInactivos.repaint();
+                panelDadosUsados.add(botones[1]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == botones[1] && dos == 1){
+                panelDadosInactivos.remove(botones[1]);
+                panelDadosInactivos.repaint();
+                panelDadosUsados.add(botones[1]);
+                panelDadosUsados.repaint();
+            }else if (e.getSource() == botones[1] && dos == 2){
+                panelDadosInactivos.remove(botones[1]);
+                panelDadosInactivos.repaint();
+                panelDadosUsados.add(botones[1]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == dados[1] && dos == 3){
+                panelDadosInactivos.remove(botones[1]);
+                panelDadosInactivos.repaint();
+                panelDadosUsados.add(botones[1]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == botones[1] && dos == 4){
+                panelDadosInactivos.remove(botones[1]);
+                panelDadosInactivos.repaint();
+                panelDadosUsados.add(botones[1]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == botones[1] && dos == 5){
+                panelDadosInactivos.remove(botones[1]);
+                panelDadosInactivos.repaint();
+                panelDadosUsados.add(botones[1]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == botones[1] && dos == 6){
+                panelDadosInactivos.remove(botones[1]);
+                panelDadosInactivos.repaint();
+                panelDadosUsados.add(botones[1]);
+                panelDadosUsados.repaint();
+            }
+            //Tercer dado inactivo
+            if(e.getSource() == botones[2] && tres == 0){
+                panelDadosInactivos.remove(botones[2]);
+                panelDadosInactivos.repaint();
+                panelDadosUsados.add(botones[2]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == botones[2] && tres == 1){
+                panelDadosInactivos.remove(botones[2]);
+                panelDadosInactivos.repaint();
+                panelDadosUsados.add(botones[2]);
+                panelDadosUsados.repaint();
+            }else if (e.getSource() == botones[2] && tres == 2){
+                panelDadosInactivos.remove(botones[2]);
+                panelDadosInactivos.repaint();
+                panelDadosUsados.add(botones[2]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == botones[2] && tres == 3){
+                panelDadosInactivos.remove(botones[2]);
+                panelDadosInactivos.repaint();
+                panelDadosUsados.add(botones[2]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == botones[2] && tres == 4){
+                panelDadosInactivos.remove(botones[2]);
+                panelDadosInactivos.repaint();
+                panelDadosUsados.add(botones[2]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == botones[2] && tres == 5){
+                panelDadosInactivos.remove(botones[2]);
+                panelDadosInactivos.repaint();
+                panelDadosUsados.add(botones[2]);
+                panelDadosUsados.repaint();
+            }else if(e.getSource() == botones[2] && tres == 6){
+                panelDadosInactivos.remove(botones[2]);
+                panelDadosInactivos.repaint();
+                panelDadosUsados.add(botones[2]);
+                panelDadosUsados.repaint();
+            }
+
+
             if (e.getSource() == salir){
                 System.exit(0);
             }
