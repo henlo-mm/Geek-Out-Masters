@@ -55,6 +55,13 @@ public class GUIGeek extends JFrame{
 
         ayuda = new JButton(" ? ");
         ayuda.addActionListener(escucha);
+        //ayuda.setOpaque(true);
+        //ayuda.setIcon(new ImageIcon(getClass().getResource("/resources/ayuda2.png")));
+        //ayuda.setPreferredSize(new Dimension(30,30));
+        //ayuda.setMargin(new Insets(0, 0, 0, 0));
+        //ayuda.setBorder(null);
+        //ayuda.setContentAreaFilled(false);
+        //ayuda.setFocusable(true);
         constraints.gridx=0;
         constraints.gridy=1;
         constraints.gridwidth=1;
@@ -86,16 +93,16 @@ public class GUIGeek extends JFrame{
 
         Random ran = new Random();
 
-        uno = ran.nextInt(5) + 1;
-        dos = ran.nextInt(5) + 1;
-        tres = ran.nextInt(5) + 1;
-        cuatro = ran.nextInt(5) + 1;
-        cinco = ran.nextInt(5) + 1;
-        seis = ran.nextInt(5) + 1;
-        siete = ran.nextInt(5) + 1;
-        ocho = ran.nextInt(5) + 1;
-        nueve = ran.nextInt(5) + 1;
-        diez = ran.nextInt(5) + 1;
+        uno = ran.nextInt(6);
+        dos = ran.nextInt(6);
+        tres = ran.nextInt(6);
+        cuatro = ran.nextInt(6);
+        cinco = ran.nextInt(6);
+        seis = ran.nextInt(6);
+        siete = ran.nextInt(6);
+        ocho = ran.nextInt(6);
+        nueve = ran.nextInt(6);
+        diez = ran.nextInt(6) ;
 
         //Arralist de imagenes
         imagenes = new ArrayList<ImageIcon>();
@@ -121,42 +128,49 @@ public class GUIGeek extends JFrame{
         dados = new JButton[7];
 
         dados[0] = new JButton(imagenes.get(cuatro));
+        dados[0].addActionListener(escucha);
         dados[0].setOpaque(true);
         dados[0].setBorder(null);
         dados[0].setContentAreaFilled(false);
         dados[0].setFocusable(true);
 
         dados[1] = new JButton(imagenes.get(cinco));
+        dados[1].addActionListener(escucha);
         dados[1].setOpaque(true);
         dados[1].setBorder(null);
         dados[1].setContentAreaFilled(false);
         dados[1].setFocusable(true);
 
         dados[2] = new JButton(imagenes.get(seis));
+        dados[2].addActionListener(escucha);
         dados[2].setOpaque(true);
         dados[2].setBorder(null);
         dados[2].setContentAreaFilled(false);
         dados[2].setFocusable(true);
 
         dados[3] = new JButton(imagenes.get(siete));
+        dados[3].addActionListener(escucha);
         dados[3].setOpaque(true);
         dados[3].setBorder(null);
         dados[3].setContentAreaFilled(false);
         dados[3].setFocusable(true);
 
         dados[4] = new JButton(imagenes.get(ocho));
+        dados[4].addActionListener(escucha);
         dados[4].setOpaque(true);
         dados[4].setBorder(null);
         dados[4].setContentAreaFilled(false);
         dados[4].setFocusable(true);
 
         dados[5] = new JButton(imagenes.get(nueve));
+        dados[5].addActionListener(escucha);
         dados[5].setOpaque(true);
         dados[5].setBorder(null);
         dados[5].setContentAreaFilled(false);
         dados[5].setFocusable(true);
 
         dados[6] = new JButton(imagenes.get(diez));
+        dados[6].addActionListener(escucha);
         dados[6].setOpaque(true);
         dados[6].setBorder(null);
         dados[6].setContentAreaFilled(false);
@@ -164,11 +178,11 @@ public class GUIGeek extends JFrame{
 
         //Panel Dados Activos
         TitledBorder border = BorderFactory.createTitledBorder("DADOS ACTIVOS:");
-        border.setTitleColor(new Color(252, 252, 252));
+       // border.setTitleColor(new Color(252, 252, 252));
         panelDadosActivos = new JPanel();
         panelDadosActivos.setPreferredSize(new Dimension(450, 250));
         panelDadosActivos.setBorder(border);
-        panelDadosActivos.setBackground(new Color(12, 30, 127));
+        //panelDadosActivos.setBackground(new Color(12, 30, 127));
         panelDadosActivos.add(dados[0]);
         panelDadosActivos.add(dados[1]);
         panelDadosActivos.add(dados[2]);
@@ -209,7 +223,7 @@ public class GUIGeek extends JFrame{
 
         panelDadosInactivos = new JPanel();
         panelDadosInactivos.setPreferredSize(new Dimension(450, 250));
-        panelDadosInactivos.setBorder(BorderFactory.createTitledBorder("Dados Inactivos:"));
+        panelDadosInactivos.setBorder(BorderFactory.createTitledBorder("DADOS INACTIVOS:"));
         panelDadosInactivos.add(botones[0]);
         panelDadosInactivos.add(botones[1]);
         panelDadosInactivos.add(botones[2]);
@@ -224,7 +238,7 @@ public class GUIGeek extends JFrame{
 
         panelDadosUsados = new JPanel();
         panelDadosUsados.setPreferredSize(new Dimension(450, 250));
-        panelDadosUsados.setBorder(BorderFactory.createTitledBorder("Dados Usados"));
+        panelDadosUsados.setBorder(BorderFactory.createTitledBorder("DADOS USADOS:"));
         //panelDadosUsados.add(dados_usados);
         constraints.gridx=1;
         constraints.gridy=2;
@@ -237,7 +251,7 @@ public class GUIGeek extends JFrame{
 
         panelPuntuacion = new JPanel();
         panelPuntuacion.setPreferredSize(new Dimension(450, 250));
-        panelPuntuacion.setBorder(BorderFactory.createTitledBorder("Puntaje"));
+        panelPuntuacion.setBorder(BorderFactory.createTitledBorder("PUNTAJE:"));
         //panelPuntuacion.add(tarjeton_puntaje);
         constraints.gridx=1;
         constraints.gridy=3;
@@ -256,36 +270,30 @@ public class GUIGeek extends JFrame{
     }
 
     private class Escucha implements ActionListener {
-        private Escucha() {
-        }
 
         public void actionPerformed(ActionEvent e) {
-            if(uno == 0){
-                System.out.println("todo salio good");
+            if(e.getSource() == dados[0] && cuatro == 0){
+                System.out.println("todo salio good ?");
 
-            }else if(uno == 1){
+            }else if(e.getSource() == dados[0] && cuatro == 1){
                 System.out.println("todo salio good2");
 
-            }else if (uno == 2){
+            }else if (e.getSource() == dados[0] && cuatro == 2){
                 System.out.println("todo salio good3");
 
-            }else if(uno == 3){
+            }else if(e.getSource() == dados[0] && cuatro == 3){
                 System.out.println("todo salio good4");
 
-            }else if(uno == 4){
+            }else if(e.getSource() == dados[0] && cuatro == 4){
                 System.out.println("todo salio good5");
 
-            }else if(uno == 5){
+            }else if(e.getSource() == dados[0] && cuatro == 5){
                 System.out.println("todo salio good6");
 
-            }else if(uno == 6){
+            }else if(e.getSource() == dados[0] && cuatro == 6){
                 System.out.println("todo salio good7");
 
-            }
-            if (e.getSource() == tirar) {
-                System.out.println("todo salio good");
-            }
-            else {
+            }else {
                 if (e.getSource() == ayuda){
                     JOptionPane.showMessageDialog(null, MENSAJE_INICIO);
                 }else{

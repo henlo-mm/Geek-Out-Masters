@@ -1,6 +1,13 @@
 package GeekOut;
 
+import javax.swing.*;
 import java.util.Random;
+import java.util.*;
+import java.awt.*;
+import java.util.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.border.TitledBorder;
 
 public class Dado {
     private int dragon;
@@ -14,8 +21,27 @@ public class Dado {
     public Dado() {
     }
     public int getCara() {
+
         Random aleatorio = new Random();
         this.caraDado = aleatorio.nextInt(6) + 1;
+
+       /** switch (caraDado) {
+
+            case 1:
+                System.out.println("En la cara opuesta está el \"héroe\".");
+                break;
+            case 2:
+                System.out.println("En la cara opuesta está el \"cohete\".");
+                break;
+            case 3:
+                System.out.println("En la cara opuesta está el \"corazón\".");
+                break;
+            default:
+                System.out.println("ERROR");
+
+
+        }
+        */
         return this.caraDado;
     }
 
