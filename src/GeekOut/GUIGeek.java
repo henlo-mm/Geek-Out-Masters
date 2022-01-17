@@ -274,6 +274,8 @@ public class GUIGeek extends JFrame{
             if(e.getSource() == dados[0] && cuatro == 0){
                 panelDadosActivos.remove(dados[0]);
                 panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[0]);
+                panelDadosUsados.repaint();
                 System.out.println("todo salio good ?");
 
 
