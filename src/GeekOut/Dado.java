@@ -25,60 +25,59 @@ public class Dado {
         Random aleatorio = new Random();
         this.caraDado = aleatorio.nextInt(6) + 1;
 
-       /** switch (caraDado) {
-
-            case 1:
-                System.out.println("En la cara opuesta está el \"héroe\".");
-                break;
-            case 2:
-                System.out.println("En la cara opuesta está el \"cohete\".");
-                break;
-            case 3:
-                System.out.println("En la cara opuesta está el \"corazón\".");
-                break;
-            default:
-                System.out.println("ERROR");
-
-
-        }
-        */
+        /** switch (caraDado) {
+         case 1:
+         System.out.println("En la cara opuesta está el \"héroe\".");
+         break;
+         case 2:
+         System.out.println("En la cara opuesta está el \"cohete\".");
+         break;
+         case 3:
+         System.out.println("En la cara opuesta está el \"corazón\".");
+         break;
+         default:
+         System.out.println("ERROR");
+         }
+         */
         return this.caraDado;
     }
+public void getDragon(){
 
-  /**  public int getCorazon() {
-        Random aleatorio = new Random();
-        this.corazon = aleatorio.nextInt(2) + 1;
-        return this.corazon;
+        JOptionPane.showMessageDialog(null, "Este es un mensaje de Advertencia",
+                "WARNING_MESSAGE", JOptionPane.WARNING_MESSAGE);
     }
+public void getMeeple(JButton x){
 
-    public int getDragon() {
-        Random aleatorio = new Random();
-        this.dragon = aleatorio.nextInt(2) + 1;
-        return this.dragon;
-    }
-
-    public int getHeroe() {
-        Random aleatorio = new Random();
-        this.dragon = aleatorio.nextInt(2) + 1;
-        return this.heroe;
-    }
-
-    public int getMeple() {
-        Random aleatorio = new Random();
-        this.meple = aleatorio.nextInt(2) + 1;
-        return this.meple;
-    }
-
-    public int getNave() {
-        Random aleatorio = new Random();
-        this.nave = aleatorio.nextInt(2) + 1;
-        return this.nave;
-    }
-
-    public int getPuntos() {
-        Random aleatorio = new Random();
-        this.puntos = aleatorio.nextInt(2) + 1;
-        return this.puntos;
-    }
-    */
+}
+    /**  public int getCorazon() {
+     Random aleatorio = new Random();
+     this.corazon = aleatorio.nextInt(2) + 1;
+     return this.corazon;
+     }
+     public int getDragon() {
+     Random aleatorio = new Random();
+     this.dragon = aleatorio.nextInt(2) + 1;
+     return this.dragon;
+     }
+     public int getHeroe() {
+     Random aleatorio = new Random();
+     this.dragon = aleatorio.nextInt(2) + 1;
+     return this.heroe;
+     }
+     public int getMeple() {
+     Random aleatorio = new Random();
+     this.meple = aleatorio.nextInt(2) + 1;
+     return this.meple;
+     }
+     public int getNave() {
+     Random aleatorio = new Random();
+     this.nave = aleatorio.nextInt(2) + 1;
+     return this.nave;
+     }
+     public int getPuntos() {
+     Random aleatorio = new Random();
+     this.puntos = aleatorio.nextInt(2) + 1;
+     return this.puntos;
+     }
+     */
 }

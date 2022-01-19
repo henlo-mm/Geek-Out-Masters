@@ -1,14 +1,27 @@
 package GeekOut;
 
 import java.awt.*;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.util.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
+import javax.swing.plaf.ActionMapUIResource;
 import java.util.Random;
 public class GUIGeek extends JFrame{
-    public static final String MENSAJE_INICIO="PROBANDO";
+    public static final String MENSAJE_INICIO="Bienvenido a Geek-Out-Masters\n" +
+            "\n Geek Out! Masters es un juego de dados y cada una de las 6 caras de los mismos "+
+            "\n tienen 1 dibujo que permite al jugador hacer 1 acción especial:"+
+            "\n      El 42 otorga puntos. Cada dado activo que salga con esta cara se pondrá en el track de puntos" +
+            "\n      El Meeple permite relanzar otro dado en juego"+
+            "\n      La Nave Espacial envía un dado no usado a la sección de dados inactivos"+
+            "\n      El Superhéroe permite que cualquier dado no usado sea volteado y colocado en su cara opuesta"+
+            "\n      El Corazón permite tomar un dado de la sección de dados inactivos y lanzarlo para que sea un nuevo dado activo. "+
+            "\n      El Dragón es la cara que queremos evitar, si al final de la ronda es el último dado activo perdemos nuestro puntos"+
+            "\n De los 10 dados que trae el juego se toman 3 y se colocan en el sector de \"Dados Inactivos\". Los otros 7 dados se tiran y pasan a ser los \"Dados Activos\""+
+            "\n Ahora bien, para ganar el juego deberás tener un minimo de 30 puntos en menos de 5 rondas, de otra manera perderas el juego";
     private Header headerProject;
     private JButton tirar, salir,ayuda;
     private  JButton[] dados;
@@ -17,6 +30,7 @@ public class GUIGeek extends JFrame{
     private ImageIcon imageDado, imageDado2, imageDado3,imageDado4, imageDado5, imageDado6;
     private GUIGeek.Escucha escucha;
     ArrayList<ImageIcon> imagenes;
+    private Dado dado_;
     private JSeparator separator;
     private ModelGeek modelGeek;
     int uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez;
@@ -44,6 +58,7 @@ public class GUIGeek extends JFrame{
         //Create Listener Object or Control Object
         escucha = new Escucha();
         modelGeek = new ModelGeek();
+        dado_ = new Dado();
         headerProject = new Header("GEEK OUT MASTERS", new Color(68, 68, 68));
         constraints.gridx=0;
         constraints.gridy=0;
@@ -178,7 +193,7 @@ public class GUIGeek extends JFrame{
 
         //Panel Dados Activos
         TitledBorder border = BorderFactory.createTitledBorder("DADOS ACTIVOS:");
-       // border.setTitleColor(new Color(252, 252, 252));
+        // border.setTitleColor(new Color(252, 252, 252));
         panelDadosActivos = new JPanel();
         panelDadosActivos.setPreferredSize(new Dimension(450, 250));
         panelDadosActivos.setBorder(border);
@@ -268,6 +283,7 @@ public class GUIGeek extends JFrame{
         //panelPuntuacion.add();
     }
 
+
     public static void main(String[] args) {
         EventQueue.invokeLater(() -> {
             GUIGeek miProjectGUI =  new GUIGeek();
@@ -277,17 +293,16 @@ public class GUIGeek extends JFrame{
     private class Escucha implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
+
             //Primer dado activo
-            if(e.getSource() == dados[0] && cuatro == 0){
-                panelDadosActivos.remove(dados[0]);
-                panelDadosActivos.repaint();
-                panelDadosUsados.add(dados[0]);
-                panelDadosUsados.repaint();
-            }else if(e.getSource() == dados[0] && cuatro == 1){
-                panelDadosActivos.remove(dados[0]);
-                panelDadosActivos.repaint();
-                panelDadosUsados.add(dados[0]);
-                panelDadosUsados.repaint();
+            if(e.getSource() == dados[0] && cuatro == 0) {
+                dado_.getDragon();
+            }
+            else if(e.getSource() == dados[0] && cuatro == 1){
+                   panelDadosActivos.remove(dados[1]);
+                    panelDadosActivos.repaint();
+                    panelDadosUsados.add(dados[1]);
+                    panelDadosUsados.repaint();
             }else if (e.getSource() == dados[0] && cuatro == 2){
                 panelDadosActivos.remove(dados[0]);
                 panelDadosActivos.repaint();
@@ -317,12 +332,12 @@ public class GUIGeek extends JFrame{
                 panelDadosUsados.add(dados[0]);
                 panelDadosUsados.repaint();
             }
+
+
             //Segundo dado activo
             if(e.getSource() == dados[1] && cinco == 0){
-                panelDadosActivos.remove(dados[1]);
-                panelDadosActivos.repaint();
-                panelDadosUsados.add(dados[1]);
-                panelDadosUsados.repaint();
+                dado_.getDragon();
+
             }else if(e.getSource() == dados[1] && cinco == 1){
                 panelDadosActivos.remove(dados[1]);
                 panelDadosActivos.repaint();
@@ -356,13 +371,13 @@ public class GUIGeek extends JFrame{
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[1]);
                 panelDadosUsados.repaint();
+
+
             }
             //Tercer dado activo
             if(e.getSource() == dados[2] && seis == 0){
-                panelDadosActivos.remove(dados[2]);
-                panelDadosActivos.repaint();
-                panelDadosUsados.add(dados[2]);
-                panelDadosUsados.repaint();
+                dado_.getDragon();
+
             }else if(e.getSource() == dados[2] && seis == 1){
                 panelDadosActivos.remove(dados[2]);
                 panelDadosActivos.repaint();
@@ -397,12 +412,11 @@ public class GUIGeek extends JFrame{
                 panelDadosUsados.add(dados[2]);
                 panelDadosUsados.repaint();
             }
+
+
             //Cuarto dado activo
             if(e.getSource() == dados[3] && siete == 0){
-                panelDadosActivos.remove(dados[3]);
-                panelDadosActivos.repaint();
-                panelDadosUsados.add(dados[3]);
-                panelDadosUsados.repaint();
+                dado_.getDragon();
             }else if(e.getSource() == dados[3] && siete == 1){
                 panelDadosActivos.remove(dados[3]);
                 panelDadosActivos.repaint();
@@ -678,5 +692,6 @@ public class GUIGeek extends JFrame{
             }
 
         }
+
+        }
     }
-}
