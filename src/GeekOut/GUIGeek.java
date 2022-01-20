@@ -27,10 +27,6 @@ public class GUIGeek extends JFrame {
     private JPanel panelDadosActivos, panelDadosInactivos, panelDadosUsados, panelPuntuacion;
     private ImageIcon imageDado, imageDado2, imageDado3, imageDado4, imageDado5, imageDado6;
     private GUIGeek.Escucha escucha;
-    private GUIGeek.Escucha2 escucha2;
-    private GUIGeek.Escucha3 escucha3;
-    private GUIGeek.Escucha4 escucha4;
-    private GUIGeek.Escucha5 escucha5;
     ArrayList<ImageIcon> imagenes;
     private Dado dado_;
     private JSeparator separator;
@@ -295,29 +291,6 @@ public class GUIGeek extends JFrame {
             GUIGeek miProjectGUI = new GUIGeek();
         });
     }
-    private class Escucha2 implements ActionListener {
-        public void actionPerformed(ActionEvent e) {
-
-        }
-    }
-    private class Escucha3 implements ActionListener {
-        public void actionPerformed(ActionEvent e) {
-
-        }
-    }
-    private class Escucha4 implements ActionListener {
-        public void actionPerformed(ActionEvent e) {
-
-        }
-    }
-
-    private class Escucha5 implements ActionListener {
-        public void actionPerformed(ActionEvent e) {
-
-        }
-    }
-
-
 
     private class Escucha implements ActionListener {
 
@@ -409,8 +382,6 @@ public class GUIGeek extends JFrame {
                         System.out.println(e.getButton() == MouseEvent.BUTTON3);
                         if (e.getButton() == MouseEvent.BUTTON3) {
                             dados[2].removeActionListener(escucha);
-
-
                             dados[2].addActionListener(new ActionListener() {
                                 public void actionPerformed(ActionEvent e) {
                                     if (e.getSource() == dados[2] && seis == 0) {
