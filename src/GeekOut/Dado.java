@@ -41,6 +41,7 @@ public class Dado {
          */
         return this.caraDado;
     }
+
 public void getDragon(){
 
         JOptionPane.showMessageDialog(null, "Este es un mensaje de Advertencia",
