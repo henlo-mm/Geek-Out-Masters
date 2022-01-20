@@ -26,6 +26,7 @@ public class GUIGeek extends JFrame{
     private JButton tirar, salir,ayuda;
     private  JButton[] dados;
     private JButton[] botones;
+    private JButton lastButton;
     private JPanel panelDadosActivos, panelDadosInactivos, panelDadosUsados, panelPuntuacion;
     private ImageIcon imageDado, imageDado2, imageDado3,imageDado4, imageDado5, imageDado6;
     private GUIGeek.Escucha escucha;
@@ -35,6 +36,8 @@ public class GUIGeek extends JFrame{
     private ModelGeek modelGeek;
     int uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez;
     private TitledBorder titledBorder;
+    int clickCount = 0;
+    int contador = 0;
 
 
     public GUIGeek() {
@@ -150,6 +153,7 @@ public class GUIGeek extends JFrame{
         dados[0].setFocusable(true);
 
         dados[1] = new JButton(imagenes.get(cinco));
+        dados[1].setActionCommand("Segundo dado");
         dados[1].addActionListener(escucha);
         dados[1].setOpaque(true);
         dados[1].setBorder(null);
@@ -157,6 +161,7 @@ public class GUIGeek extends JFrame{
         dados[1].setFocusable(true);
 
         dados[2] = new JButton(imagenes.get(seis));
+        dados[2].setActionCommand("Tercer dado");
         dados[2].addActionListener(escucha);
         dados[2].setOpaque(true);
         dados[2].setBorder(null);
@@ -164,6 +169,7 @@ public class GUIGeek extends JFrame{
         dados[2].setFocusable(true);
 
         dados[3] = new JButton(imagenes.get(siete));
+        dados[3].setActionCommand("Cuarto dado");
         dados[3].addActionListener(escucha);
         dados[3].setOpaque(true);
         dados[3].setBorder(null);
@@ -171,6 +177,7 @@ public class GUIGeek extends JFrame{
         dados[3].setFocusable(true);
 
         dados[4] = new JButton(imagenes.get(ocho));
+        dados[4].setActionCommand("Quinto dado");
         dados[4].addActionListener(escucha);
         dados[4].setOpaque(true);
         dados[4].setBorder(null);
@@ -178,6 +185,7 @@ public class GUIGeek extends JFrame{
         dados[4].setFocusable(true);
 
         dados[5] = new JButton(imagenes.get(nueve));
+        dados[5].setActionCommand("Sexto dado");
         dados[5].addActionListener(escucha);
         dados[5].setOpaque(true);
         dados[5].setBorder(null);
@@ -185,6 +193,7 @@ public class GUIGeek extends JFrame{
         dados[5].setFocusable(true);
 
         dados[6] = new JButton(imagenes.get(diez));
+        dados[6].setActionCommand("Séptimo dado");
         dados[6].addActionListener(escucha);
         dados[6].setOpaque(true);
         dados[6].setBorder(null);
@@ -217,6 +226,7 @@ public class GUIGeek extends JFrame{
         botones = new JButton[3];
 
         botones[0] = new JButton(imagenes.get(uno));
+
         botones[0].addActionListener(escucha);
         botones[0].setOpaque(true);
         botones[0].setBorder(null);
@@ -295,30 +305,87 @@ public class GUIGeek extends JFrame{
         public void actionPerformed(ActionEvent e) {
 
             //Primer dado activo
+
+
             if(e.getSource() == dados[0] && cuatro == 0) {
                 dado_.getDragon();
+                dados[0].setActionCommand("Sexto dado");
             }
-            else if(e.getSource() == dados[0] && cuatro == 1){
-                   panelDadosActivos.remove(dados[1]);
-                    panelDadosActivos.repaint();
-                    panelDadosUsados.add(dados[1]);
-                    panelDadosUsados.repaint();
-            }else if (e.getSource() == dados[0] && cuatro == 2){
+            if(e.getSource() == dados[0] && cuatro == 1){
+
                 panelDadosActivos.remove(dados[0]);
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[0]);
                 panelDadosUsados.repaint();
-            }else if(e.getSource() == dados[0] && cuatro == 3){
+                System.out.print(dados[0].getSelectedObjects());
+
+
+            }
+            else if (e.getSource() == dados[0] && cuatro == 2 ){
+
                 panelDadosActivos.remove(dados[0]);
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[0]);
                 panelDadosUsados.repaint();
-            }else if(e.getSource() == dados[0] && cuatro == 4){
+                dados[1].removeActionListener(escucha);
+                dados[1].addActionListener(new ActionListener() {
+                    public void actionPerformed(ActionEvent e) {
+                        if(e.getSource() == dados[1] && cinco == 0){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/2.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+                        if(e.getSource() == dados[1] && cinco == 1){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/4.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+                        if(e.getSource() == dados[1] && cinco == 2){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/0.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+                        if(e.getSource() == dados[1] && cinco== 3){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/5.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+                        if(e.getSource() == dados[1] && cinco == 4){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/1.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+                        if(e.getSource() == dados[1] && cinco == 5){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/3.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+
+                    }
+                });
+
+
+            }
+            else if(e.getSource() == dados[0] && cuatro == 3){
+
                 panelDadosActivos.remove(dados[0]);
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[0]);
                 panelDadosUsados.repaint();
-            }else if(e.getSource() == dados[0] && cuatro == 5){
+                System.out.print(dados[0].getSelectedObjects());
+
+
+
+            }
+           else  if(e.getSource() == dados[0] && cuatro == 4){
+
+                panelDadosActivos.remove(dados[0]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[0]);
+                panelDadosUsados.repaint();
+
+            }
+            else if(e.getSource() == dados[0] && cuatro == 5){
                 panelDadosActivos.remove(dados[0]);
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[0]);
@@ -326,11 +393,6 @@ public class GUIGeek extends JFrame{
                 botones[0].setEnabled(true);
                 botones[1].setEnabled(true);
                 botones[2].setEnabled(true);
-            }else if(e.getSource() == dados[0] && cuatro == 6){
-                panelDadosActivos.remove(dados[0]);
-                panelDadosActivos.repaint();
-                panelDadosUsados.add(dados[0]);
-                panelDadosUsados.repaint();
             }
 
 
@@ -339,26 +401,44 @@ public class GUIGeek extends JFrame{
                 dado_.getDragon();
 
             }else if(e.getSource() == dados[1] && cinco == 1){
+
                 panelDadosActivos.remove(dados[1]);
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[1]);
                 panelDadosUsados.repaint();
+
+
             }else if (e.getSource() == dados[1] && cinco == 2){
+
                 panelDadosActivos.remove(dados[1]);
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[1]);
                 panelDadosUsados.repaint();
+                /**dados[0].removeActionListener(escucha);
+                dados[2].removeActionListener(escucha);
+                dados[3].removeActionListener(escucha);
+                dados[4].removeActionListener(escucha);
+                dados[5].removeActionListener(escucha);
+                dados[6].removeActionListener(escucha);
+                 */
+
             }else if(e.getSource() == dados[1] && cinco == 3){
+
                 panelDadosActivos.remove(dados[1]);
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[1]);
                 panelDadosUsados.repaint();
+
             }else if(e.getSource() == dados[1] && cinco == 4){
+
                 panelDadosActivos.remove(dados[1]);
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[1]);
                 panelDadosUsados.repaint();
+
+
             }else if(e.getSource() == dados[1] && cinco == 5){
+
                 panelDadosActivos.remove(dados[1]);
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[1]);
@@ -366,11 +446,6 @@ public class GUIGeek extends JFrame{
                 botones[0].setEnabled(true);
                 botones[1].setEnabled(true);
                 botones[2].setEnabled(true);
-            }else if(e.getSource() == dados[1] && cinco == 6){
-                panelDadosActivos.remove(dados[1]);
-                panelDadosActivos.repaint();
-                panelDadosUsados.add(dados[1]);
-                panelDadosUsados.repaint();
 
 
             }
@@ -383,21 +458,69 @@ public class GUIGeek extends JFrame{
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[2]);
                 panelDadosUsados.repaint();
+
             }else if (e.getSource() == dados[2] && seis == 2){
                 panelDadosActivos.remove(dados[2]);
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[2]);
                 panelDadosUsados.repaint();
+                dados[1].removeActionListener(escucha);
+                dados[1].addActionListener(new ActionListener() {
+                    public void actionPerformed(ActionEvent e) {
+                        if(e.getSource() == dados[1] && cinco == 0){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/2.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+                        if(e.getSource() == dados[1] && cinco == 1){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/4.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+                        if(e.getSource() == dados[1] && cinco == 2){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/0.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+                        if(e.getSource() == dados[1] && cinco== 3){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/5.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+                        if(e.getSource() == dados[1] && cinco == 4){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/1.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+                        if(e.getSource() == dados[1] && cinco == 5){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/3.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+
+
+                    }
+                });
+
+
+
+
+
             }else if(e.getSource() == dados[2] && seis == 3){
                 panelDadosActivos.remove(dados[2]);
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[2]);
                 panelDadosUsados.repaint();
+
+
+
             }else if(e.getSource() == dados[2] && seis == 4){
                 panelDadosActivos.remove(dados[2]);
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[2]);
                 panelDadosUsados.repaint();
+
+
             }else if(e.getSource() == dados[2] && seis == 5){
                 panelDadosActivos.remove(dados[2]);
                 panelDadosActivos.repaint();
@@ -406,11 +529,8 @@ public class GUIGeek extends JFrame{
                 botones[0].setEnabled(true);
                 botones[1].setEnabled(true);
                 botones[2].setEnabled(true);
-            }else if(e.getSource() == dados[2] && seis == 6){
-                panelDadosActivos.remove(dados[2]);
-                panelDadosActivos.repaint();
-                panelDadosUsados.add(dados[2]);
-                panelDadosUsados.repaint();
+
+
             }
 
 
@@ -422,21 +542,64 @@ public class GUIGeek extends JFrame{
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[3]);
                 panelDadosUsados.repaint();
+
             }else if (e.getSource() == dados[3] && siete == 2){
                 panelDadosActivos.remove(dados[3]);
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[3]);
                 panelDadosUsados.repaint();
+                dados[1].removeActionListener(escucha);
+                dados[1].addActionListener(new ActionListener() {
+                    public void actionPerformed(ActionEvent e) {
+                        if(e.getSource() == dados[1] && cinco == 0){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/2.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+                        if(e.getSource() == dados[1] && cinco == 1){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/4.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+                        if(e.getSource() == dados[1] && cinco == 2){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/0.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+                        if(e.getSource() == dados[1] && cinco== 3){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/5.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+                        if(e.getSource() == dados[1] && cinco == 4){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/1.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+                        if(e.getSource() == dados[1] && cinco == 5){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/3.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+
+
+                    }
+                });
+
+
+
             }else if(e.getSource() == dados[3] && siete == 3){
                 panelDadosActivos.remove(dados[3]);
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[3]);
                 panelDadosUsados.repaint();
+
             }else if(e.getSource() == dados[3] && siete == 4){
                 panelDadosActivos.remove(dados[3]);
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[3]);
                 panelDadosUsados.repaint();
+
             }else if(e.getSource() == dados[3] && siete == 5){
                 panelDadosActivos.remove(dados[3]);
                 panelDadosActivos.repaint();
@@ -445,11 +608,7 @@ public class GUIGeek extends JFrame{
                 botones[0].setEnabled(true);
                 botones[1].setEnabled(true);
                 botones[2].setEnabled(true);
-            }else if(e.getSource() == dados[3] && siete == 6){
-                panelDadosActivos.remove(dados[3]);
-                panelDadosActivos.repaint();
-                panelDadosUsados.add(dados[3]);
-                panelDadosUsados.repaint();
+
             }
             //Quinto dado activo
             if(e.getSource() == dados[4] && ocho == 0){
@@ -463,20 +622,63 @@ public class GUIGeek extends JFrame{
                 panelDadosUsados.add(dados[4]);
                 panelDadosUsados.repaint();
             }else if (e.getSource() == dados[4] && ocho == 2){
+                System.out.print(e.getActionCommand());
                 panelDadosActivos.remove(dados[4]);
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[4]);
                 panelDadosUsados.repaint();
+                dados[1].removeActionListener(escucha);
+                dados[1].addActionListener(new ActionListener() {
+                    public void actionPerformed(ActionEvent e) {
+                        if(e.getSource() == dados[1] && cinco == 0){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/2.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+                        if(e.getSource() == dados[1] && cinco == 1){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/4.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+                        if(e.getSource() == dados[1] && cinco == 2){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/0.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+                        if(e.getSource() == dados[1] && cinco== 3){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/5.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+                        if(e.getSource() == dados[1] && cinco == 4){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/1.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+                        if(e.getSource() == dados[1] && cinco == 5){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/3.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+
+
+                    }
+                });
+
+
+
             }else if(e.getSource() == dados[4] && ocho == 3){
                 panelDadosActivos.remove(dados[4]);
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[4]);
                 panelDadosUsados.repaint();
+
             }else if(e.getSource() == dados[4] && ocho == 4){
                 panelDadosActivos.remove(dados[4]);
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[4]);
                 panelDadosUsados.repaint();
+
             }else if(e.getSource() == dados[4] && ocho == 5){
                 panelDadosActivos.remove(dados[4]);
                 panelDadosActivos.repaint();
@@ -485,11 +687,7 @@ public class GUIGeek extends JFrame{
                 botones[0].setEnabled(true);
                 botones[1].setEnabled(true);
                 botones[2].setEnabled(true);
-            }else if(e.getSource() == dados[4] && ocho == 6){
-                panelDadosActivos.remove(dados[4]);
-                panelDadosActivos.repaint();
-                panelDadosUsados.add(dados[4]);
-                panelDadosUsados.repaint();
+
             }
             //Sexto dado activo
             if(e.getSource() == dados[5] && nueve == 0){
@@ -507,6 +705,45 @@ public class GUIGeek extends JFrame{
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[5]);
                 panelDadosUsados.repaint();
+                dados[1].removeActionListener(escucha);
+                dados[1].addActionListener(new ActionListener() {
+                    public void actionPerformed(ActionEvent e) {
+                        if(e.getSource() == dados[1] && cinco == 0){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/2.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+                        if(e.getSource() == dados[1] && cinco == 1){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/4.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+                        if(e.getSource() == dados[1] && cinco == 2){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/0.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+                        if(e.getSource() == dados[1] && cinco== 3){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/5.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+                        if(e.getSource() == dados[1] && cinco == 4){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/1.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+                        if(e.getSource() == dados[1] && cinco == 5){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/3.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+
+
+                    }
+                });
+
+
             }else if(e.getSource() == dados[5] && nueve == 3){
                 panelDadosActivos.remove(dados[5]);
                 panelDadosActivos.repaint();
@@ -525,11 +762,6 @@ public class GUIGeek extends JFrame{
                 botones[0].setEnabled(true);
                 botones[1].setEnabled(true);
                 botones[2].setEnabled(true);
-            }else if(e.getSource() == dados[5] && nueve == 6){
-                panelDadosActivos.remove(dados[5]);
-                panelDadosActivos.repaint();
-                panelDadosUsados.add(dados[5]);
-                panelDadosUsados.repaint();
             }
             //Séptimo dado activo
             if(e.getSource() == dados[6] && diez == 0){
@@ -543,10 +775,49 @@ public class GUIGeek extends JFrame{
                 panelDadosUsados.add(dados[6]);
                 panelDadosUsados.repaint();
             }else if (e.getSource() == dados[6] && diez == 2){
+                System.out.print(e.getActionCommand());
                 panelDadosActivos.remove(dados[6]);
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[6]);
                 panelDadosUsados.repaint();
+                dados[1].removeActionListener(escucha);
+                dados[1].addActionListener(new ActionListener() {
+                    public void actionPerformed(ActionEvent e) {
+                        if(e.getSource() == dados[1] && cinco == 0){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/2.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+                        if(e.getSource() == dados[1] && cinco == 1){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/4.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+                        if(e.getSource() == dados[1] && cinco == 2){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/0.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+                        if(e.getSource() == dados[1] && cinco== 3){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/5.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+                        if(e.getSource() == dados[1] && cinco == 4){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/1.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+                        if(e.getSource() == dados[1] && cinco == 5){
+
+                            dados[1].setIcon(new ImageIcon(getClass().getResource("/resources/3.png")));
+                            dados[1].addActionListener(escucha);
+                        }
+
+
+                    }
+                });
+
             }else if(e.getSource() == dados[6] && diez == 3){
                 panelDadosActivos.remove(dados[6]);
                 panelDadosActivos.repaint();
@@ -565,11 +836,6 @@ public class GUIGeek extends JFrame{
                 botones[0].setEnabled(true);
                 botones[1].setEnabled(true);
                 botones[2].setEnabled(true);
-            }else if(e.getSource() == dados[6] && diez == 6) {
-                panelDadosActivos.remove(dados[6]);
-                panelDadosActivos.repaint();
-                panelDadosUsados.add(dados[6]);
-                panelDadosUsados.repaint();
             }
             //Primer dado inactivo
             if(e.getSource() == botones[0] && uno == 0){
@@ -598,11 +864,6 @@ public class GUIGeek extends JFrame{
                 panelDadosUsados.add(botones[0]);
                 panelDadosUsados.repaint();
             }else if(e.getSource() == botones[0] && uno == 5){
-                panelDadosInactivos.remove(botones[0]);
-                panelDadosInactivos.repaint();
-                panelDadosUsados.add(botones[0]);
-                panelDadosUsados.repaint();
-            }else if(e.getSource() == botones[0] && uno == 6){
                 panelDadosInactivos.remove(botones[0]);
                 panelDadosInactivos.repaint();
                 panelDadosUsados.add(botones[0]);
@@ -639,11 +900,6 @@ public class GUIGeek extends JFrame{
                 panelDadosInactivos.repaint();
                 panelDadosUsados.add(botones[1]);
                 panelDadosUsados.repaint();
-            }else if(e.getSource() == botones[1] && dos == 6){
-                panelDadosInactivos.remove(botones[1]);
-                panelDadosInactivos.repaint();
-                panelDadosUsados.add(botones[1]);
-                panelDadosUsados.repaint();
             }
             //Tercer dado inactivo
             if(e.getSource() == botones[2] && tres == 0){
@@ -676,22 +932,19 @@ public class GUIGeek extends JFrame{
                 panelDadosInactivos.repaint();
                 panelDadosUsados.add(botones[2]);
                 panelDadosUsados.repaint();
-            }else if(e.getSource() == botones[2] && tres == 6){
-                panelDadosInactivos.remove(botones[2]);
-                panelDadosInactivos.repaint();
-                panelDadosUsados.add(botones[2]);
-                panelDadosUsados.repaint();
             }
 
-
-            if (e.getSource() == salir){
+            if (e.getSource() == salir)
+            {
                 System.exit(0);
             }
-            if (e.getSource() == ayuda){
+            if (e.getSource() == ayuda)
+            {
                 JOptionPane.showMessageDialog(null, MENSAJE_INICIO);
             }
 
+
+            }
         }
 
-        }
     }
