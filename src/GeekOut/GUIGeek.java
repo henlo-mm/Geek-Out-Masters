@@ -2311,6 +2311,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e137.getSource() == dados[1] && cinco == 1) {
@@ -2318,6 +2319,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e137.getSource() == dados[1] && cinco == 2) {
@@ -2325,6 +2327,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e137.getSource() == dados[1] && cinco == 3) {
@@ -2332,6 +2335,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e137.getSource() == dados[1] && cinco == 4) {
@@ -2339,6 +2343,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e137.getSource() == dados[1] && cinco == 5) {
@@ -2346,6 +2351,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -2363,6 +2369,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(80,80);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
 
                                 }
@@ -2371,6 +2378,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(80,80);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e138.getSource() == dados[2] && seis == 2) {
@@ -2378,6 +2386,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(80,80);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e138.getSource() == dados[2] && seis == 3) {
@@ -2385,6 +2394,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(80,80);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e138.getSource() == dados[2] && seis == 4) {
@@ -2392,6 +2402,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(80,80);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e138.getSource() == dados[2] && seis == 5) {
@@ -2399,6 +2410,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(80,80);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -2417,6 +2429,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(80,80);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e139.getSource() == dados[3] && siete == 1) {
@@ -2424,6 +2437,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(80,80);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e139.getSource() == dados[3] && siete == 2) {
@@ -2431,6 +2445,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(80,80);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e139.getSource() == dados[3] && siete == 3) {
@@ -2438,6 +2453,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(80,80);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e139.getSource() == dados[3] && siete == 4) {
@@ -2445,6 +2461,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(80,80);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e139.getSource() == dados[3] && siete == 5) {
@@ -2452,6 +2469,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(80,80);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -2471,6 +2489,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(70,70);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e140.getSource() == dados[4] && ocho == 1) {
@@ -2478,6 +2497,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(70,70);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e140.getSource() == dados[4] && ocho == 2) {
@@ -2485,6 +2505,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(70,70);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e140.getSource() == dados[4] && ocho == 3) {
@@ -2492,6 +2513,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(70,70);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e140.getSource() == dados[4] && ocho == 4) {
@@ -2499,6 +2521,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(70,70);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e140.getSource() == dados[4] && ocho == 5) {
@@ -2506,6 +2529,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(70,70);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -2525,6 +2549,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e141.getSource() == dados[5] && nueve == 1) {
@@ -2532,6 +2557,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e141.getSource() == dados[5] && nueve == 2) {
@@ -2539,6 +2565,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e141.getSource() == dados[5] && nueve == 3) {
@@ -2546,6 +2573,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e141.getSource() == dados[5] && nueve == 4) {
@@ -2553,6 +2581,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e141.getSource() == dados[5] && nueve == 5) {
@@ -2560,6 +2589,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -2578,6 +2608,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(65,65);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e142.getSource() == dados[6] && diez == 1) {
@@ -2585,6 +2616,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(65,65);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e142.getSource() == dados[6] && diez == 2) {
@@ -2592,6 +2624,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(65,65);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e142.getSource() == dados[6] && diez == 3) {
@@ -2599,6 +2632,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(65,65);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e142.getSource() == dados[6] && diez == 4) {
@@ -2606,6 +2640,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(65,65);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e142.getSource() == dados[6] && diez == 5) {
@@ -2613,6 +2648,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(65,65);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -2638,6 +2674,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e149.getSource() == dados[0] && cuatro == 1) {
@@ -2645,6 +2682,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e149.getSource() == dados[0] && cuatro == 2) {
@@ -2652,6 +2690,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e149.getSource() == dados[0] && cuatro== 3) {
@@ -2659,6 +2698,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e149.getSource() == dados[0] && cuatro== 4) {
@@ -2666,6 +2706,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e149.getSource() == dados[0] && cuatro == 5) {
@@ -2673,6 +2714,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
 
@@ -2693,6 +2735,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(60,60);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
 
                                 }
@@ -2701,6 +2744,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(60,60);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e150.getSource() == dados[2] && seis == 2) {
@@ -2708,6 +2752,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(60,60);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e150.getSource() == dados[2] && seis == 3) {
@@ -2715,6 +2760,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(60,60);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e150.getSource() == dados[2] && seis == 4) {
@@ -2722,6 +2768,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(60,60);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e150.getSource() == dados[2] && seis == 5) {
@@ -2729,6 +2776,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(60,60);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -2747,6 +2795,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(70,70);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e151.getSource() == dados[3] && siete == 1) {
@@ -2754,6 +2803,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(70,70);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e151.getSource() == dados[3] && siete == 2) {
@@ -2761,6 +2811,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(70,70);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e151.getSource() == dados[3] && siete == 3) {
@@ -2768,6 +2819,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(70,70);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e151.getSource() == dados[3] && siete == 4) {
@@ -2775,6 +2827,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(70,70);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e151.getSource() == dados[3] && siete == 5) {
@@ -2782,6 +2835,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(70,70);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -2801,6 +2855,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(80,80);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e152.getSource() == dados[4] && ocho == 1) {
@@ -2808,6 +2863,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(80,80);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e152.getSource() == dados[4] && ocho == 2) {
@@ -2815,6 +2871,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(80,80);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e152.getSource() == dados[4] && ocho == 3) {
@@ -2822,6 +2879,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(80,80);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e152.getSource() == dados[4] && ocho == 4) {
@@ -2829,6 +2887,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(80,80);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e152.getSource() == dados[4] && ocho == 5) {
@@ -2836,6 +2895,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(80,80);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -2855,6 +2915,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e153.getSource() == dados[5] && nueve == 1) {
@@ -2862,6 +2923,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e153.getSource() == dados[5] && nueve == 2) {
@@ -2869,6 +2931,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e153.getSource() == dados[5] && nueve == 3) {
@@ -2876,6 +2939,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e153.getSource() == dados[5] && nueve == 4) {
@@ -2883,6 +2947,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e153.getSource() == dados[5] && nueve == 5) {
@@ -2890,6 +2955,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -2909,6 +2975,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(75,75);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e154.getSource() == dados[6] && diez == 1) {
@@ -2916,6 +2983,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(75,75);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e154.getSource() == dados[6] && diez == 2) {
@@ -2923,6 +2991,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(75,75);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e154.getSource() == dados[6] && diez == 3) {
@@ -2930,6 +2999,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(75,75);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e154.getSource() == dados[6] && diez == 4) {
@@ -2937,6 +3007,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(75,75);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e154.getSource() == dados[6] && diez == 5) {
@@ -2944,6 +3015,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(75,75);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -2970,6 +3042,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e155.getSource() == dados[0] && cuatro == 1) {
@@ -2977,6 +3050,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e155.getSource() == dados[0] && cuatro == 2) {
@@ -2984,6 +3058,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e155.getSource() == dados[0] && cuatro== 3) {
@@ -2991,6 +3066,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e155.getSource() == dados[0] && cuatro== 4) {
@@ -2998,6 +3074,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e155.getSource() == dados[0] && cuatro == 5) {
@@ -3005,6 +3082,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
 
@@ -3024,6 +3102,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e156.getSource() == dados[1] && cinco == 1) {
@@ -3031,6 +3110,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e156.getSource() == dados[1] && cinco == 2) {
@@ -3038,6 +3118,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e156.getSource() == dados[1] && cinco == 3) {
@@ -3045,6 +3126,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e156.getSource() == dados[1] && cinco == 4) {
@@ -3052,6 +3134,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e156.getSource() == dados[1] && cinco == 5) {
@@ -3059,6 +3142,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -3077,6 +3161,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(70,70);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e157.getSource() == dados[3] && siete == 1) {
@@ -3084,6 +3169,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(70,70);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e157.getSource() == dados[3] && siete == 2) {
@@ -3091,6 +3177,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(70,70);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e157.getSource() == dados[3] && siete == 3) {
@@ -3098,6 +3185,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(70,70);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e157.getSource() == dados[3] && siete == 4) {
@@ -3105,6 +3193,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(70,70);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e157.getSource() == dados[3] && siete == 5) {
@@ -3112,6 +3201,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(70,70);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -3131,6 +3221,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(80,80);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e158.getSource() == dados[4] && ocho == 1) {
@@ -3138,6 +3229,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(80,80);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e158.getSource() == dados[4] && ocho == 2) {
@@ -3145,6 +3237,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(80,80);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e158.getSource() == dados[4] && ocho == 3) {
@@ -3152,6 +3245,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(80,80);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e158.getSource() == dados[4] && ocho == 4) {
@@ -3159,6 +3253,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(80,80);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e158.getSource() == dados[4] && ocho == 5) {
@@ -3166,6 +3261,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(80,80);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -3185,6 +3281,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e159.getSource() == dados[5] && nueve == 1) {
@@ -3192,6 +3289,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e159.getSource() == dados[5] && nueve == 2) {
@@ -3199,6 +3297,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e159.getSource() == dados[5] && nueve == 3) {
@@ -3206,6 +3305,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e159.getSource() == dados[5] && nueve == 4) {
@@ -3213,6 +3313,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e159.getSource() == dados[5] && nueve == 5) {
@@ -3220,6 +3321,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -3239,6 +3341,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(75,75);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e160.getSource() == dados[6] && diez == 1) {
@@ -3246,6 +3349,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(75,75);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e160.getSource() == dados[6] && diez == 2) {
@@ -3253,6 +3357,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(75,75);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e160.getSource() == dados[6] && diez == 3) {
@@ -3260,6 +3365,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(75,75);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e160.getSource() == dados[6] && diez == 4) {
@@ -3267,6 +3373,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(75,75);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e160.getSource() == dados[6] && diez == 5) {
@@ -3274,6 +3381,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(75,75);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -3300,6 +3408,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e161.getSource() == dados[0] && cuatro == 1) {
@@ -3307,6 +3416,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e161.getSource() == dados[0] && cuatro == 2) {
@@ -3314,6 +3424,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e161.getSource() == dados[0] && cuatro== 3) {
@@ -3321,6 +3432,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e161.getSource() == dados[0] && cuatro== 4) {
@@ -3328,6 +3440,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e161.getSource() == dados[0] && cuatro == 5) {
@@ -3335,6 +3448,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
 
@@ -3354,6 +3468,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e162.getSource() == dados[1] && cinco == 1) {
@@ -3361,6 +3476,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e162.getSource() == dados[1] && cinco == 2) {
@@ -3368,6 +3484,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e162.getSource() == dados[1] && cinco == 3) {
@@ -3375,6 +3492,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e162.getSource() == dados[1] && cinco == 4) {
@@ -3382,6 +3500,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e162.getSource() == dados[1] && cinco == 5) {
@@ -3389,6 +3508,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -3407,6 +3527,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(60,60);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
 
                                 }
@@ -3415,6 +3536,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(60,60);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e163.getSource() == dados[2] && seis == 2) {
@@ -3422,6 +3544,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(60,60);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e163.getSource() == dados[2] && seis == 3) {
@@ -3429,6 +3552,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(60,60);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e163.getSource() == dados[2] && seis == 4) {
@@ -3436,6 +3560,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(60,60);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e163.getSource() == dados[2] && seis == 5) {
@@ -3443,6 +3568,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(60,60);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -3464,6 +3590,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(80,80);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e164.getSource() == dados[4] && ocho == 1) {
@@ -3471,6 +3598,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(80,80);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e164.getSource() == dados[4] && ocho == 2) {
@@ -3478,6 +3606,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(80,80);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e164.getSource() == dados[4] && ocho == 3) {
@@ -3485,6 +3614,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(80,80);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e164.getSource() == dados[4] && ocho == 4) {
@@ -3492,6 +3622,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(80,80);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e164.getSource() == dados[4] && ocho == 5) {
@@ -3499,6 +3630,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(80,80);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -3518,6 +3650,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e165.getSource() == dados[5] && nueve == 1) {
@@ -3525,6 +3658,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e165.getSource() == dados[5] && nueve == 2) {
@@ -3532,6 +3666,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e165.getSource() == dados[5] && nueve == 3) {
@@ -3539,6 +3674,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e165.getSource() == dados[5] && nueve == 4) {
@@ -3546,6 +3682,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e165.getSource() == dados[5] && nueve == 5) {
@@ -3553,6 +3690,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -3572,6 +3710,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(75,75);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e166.getSource() == dados[6] && diez == 1) {
@@ -3579,6 +3718,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(75,75);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e166.getSource() == dados[6] && diez == 2) {
@@ -3586,6 +3726,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(75,75);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e166.getSource() == dados[6] && diez == 3) {
@@ -3593,6 +3734,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(75,75);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e166.getSource() == dados[6] && diez == 4) {
@@ -3600,6 +3742,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(75,75);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e166.getSource() == dados[6] && diez == 5) {
@@ -3607,6 +3750,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(75,75);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -3633,6 +3777,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e167.getSource() == dados[0] && cuatro == 1) {
@@ -3640,6 +3785,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e167.getSource() == dados[0] && cuatro == 2) {
@@ -3647,6 +3793,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e167.getSource() == dados[0] && cuatro== 3) {
@@ -3654,6 +3801,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e167.getSource() == dados[0] && cuatro== 4) {
@@ -3661,6 +3809,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e167.getSource() == dados[0] && cuatro == 5) {
@@ -3668,6 +3817,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
 
@@ -3687,6 +3837,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e168.getSource() == dados[1] && cinco == 1) {
@@ -3694,6 +3845,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e168.getSource() == dados[1] && cinco == 2) {
@@ -3701,6 +3853,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e168.getSource() == dados[1] && cinco == 3) {
@@ -3708,6 +3861,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e168.getSource() == dados[1] && cinco == 4) {
@@ -3715,6 +3869,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e168.getSource() == dados[1] && cinco == 5) {
@@ -3722,6 +3877,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -3740,6 +3896,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(60,60);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
 
                                 }
@@ -3748,6 +3905,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(60,60);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e169.getSource() == dados[2] && seis == 2) {
@@ -3755,6 +3913,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(60,60);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e169.getSource() == dados[2] && seis == 3) {
@@ -3762,6 +3921,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(60,60);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e169.getSource() == dados[2] && seis == 4) {
@@ -3769,6 +3929,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(60,60);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e169.getSource() == dados[2] && seis == 5) {
@@ -3776,6 +3937,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(60,60);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -3794,6 +3956,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(70,70);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e170.getSource() == dados[3] && siete == 1) {
@@ -3801,6 +3964,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(70,70);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e170.getSource() == dados[3] && siete == 2) {
@@ -3808,6 +3972,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(70,70);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e170.getSource() == dados[3] && siete == 3) {
@@ -3815,6 +3980,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(70,70);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e170.getSource() == dados[3] && siete == 4) {
@@ -3822,6 +3988,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(70,70);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e170.getSource() == dados[3] && siete == 5) {
@@ -3829,6 +3996,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(70,70);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -3850,6 +4018,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e171.getSource() == dados[5] && nueve == 1) {
@@ -3857,6 +4026,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e171.getSource() == dados[5] && nueve == 2) {
@@ -3864,6 +4034,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e171.getSource() == dados[5] && nueve == 3) {
@@ -3871,6 +4042,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e171.getSource() == dados[5] && nueve == 4) {
@@ -3878,6 +4050,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e171.getSource() == dados[5] && nueve == 5) {
@@ -3885,6 +4058,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -3904,6 +4078,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(75,75);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e172.getSource() == dados[6] && diez == 1) {
@@ -3911,6 +4086,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(75,75);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e172.getSource() == dados[6] && diez == 2) {
@@ -3918,6 +4094,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(75,75);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e172.getSource() == dados[6] && diez == 3) {
@@ -3925,6 +4102,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(75,75);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e172.getSource() == dados[6] && diez == 4) {
@@ -3932,6 +4110,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(75,75);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e172.getSource() == dados[6] && diez == 5) {
@@ -3939,6 +4118,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(75,75);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -3964,6 +4144,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e173.getSource() == dados[0] && cuatro == 1) {
@@ -3971,6 +4152,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e173.getSource() == dados[0] && cuatro == 2) {
@@ -3978,6 +4160,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e173.getSource() == dados[0] && cuatro== 3) {
@@ -3985,6 +4168,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e173.getSource() == dados[0] && cuatro== 4) {
@@ -3992,6 +4176,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e173.getSource() == dados[0] && cuatro == 5) {
@@ -3999,6 +4184,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
 
@@ -4018,6 +4204,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e174.getSource() == dados[1] && cinco == 1) {
@@ -4025,6 +4212,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e174.getSource() == dados[1] && cinco == 2) {
@@ -4032,6 +4220,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e174.getSource() == dados[1] && cinco == 3) {
@@ -4039,6 +4228,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e174.getSource() == dados[1] && cinco == 4) {
@@ -4046,6 +4236,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e174.getSource() == dados[1] && cinco == 5) {
@@ -4053,6 +4244,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -4071,6 +4263,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(60,60);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
 
                                 }
@@ -4079,6 +4272,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(60,60);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e178.getSource() == dados[2] && seis == 2) {
@@ -4086,6 +4280,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(60,60);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e178.getSource() == dados[2] && seis == 3) {
@@ -4093,6 +4288,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(60,60);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e178.getSource() == dados[2] && seis == 4) {
@@ -4100,6 +4296,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(60,60);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e178.getSource() == dados[2] && seis == 5) {
@@ -4107,6 +4304,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(60,60);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -4125,6 +4323,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(70,70);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e177.getSource() == dados[3] && siete == 1) {
@@ -4132,6 +4331,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(70,70);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e177.getSource() == dados[3] && siete == 2) {
@@ -4139,6 +4339,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(70,70);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e177.getSource() == dados[3] && siete == 3) {
@@ -4146,6 +4347,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(70,70);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e177.getSource() == dados[3] && siete == 4) {
@@ -4153,6 +4355,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(70,70);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e177.getSource() == dados[3] && siete == 5) {
@@ -4160,6 +4363,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(70,70);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -4179,6 +4383,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(80,80);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e176.getSource() == dados[4] && ocho == 1) {
@@ -4186,6 +4391,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(80,80);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e176.getSource() == dados[4] && ocho == 2) {
@@ -4193,6 +4399,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(80,80);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e176.getSource() == dados[4] && ocho == 3) {
@@ -4200,6 +4407,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(80,80);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e176.getSource() == dados[4] && ocho == 4) {
@@ -4207,6 +4415,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(80,80);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e176.getSource() == dados[4] && ocho == 5) {
@@ -4214,6 +4423,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(80,80);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -4233,6 +4443,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(75,75);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e175.getSource() == dados[6] && diez == 1) {
@@ -4240,6 +4451,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(75,75);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e175.getSource() == dados[6] && diez == 2) {
@@ -4247,6 +4459,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(75,75);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e175.getSource() == dados[6] && diez == 3) {
@@ -4254,6 +4467,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(75,75);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e175.getSource() == dados[6] && diez == 4) {
@@ -4261,6 +4475,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(75,75);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e175.getSource() == dados[6] && diez == 5) {
@@ -4268,6 +4483,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[6].setLocation(75,75);
                                     panelDadosInactivos.add(dados[6]);
+                                    dados[6].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -4294,6 +4510,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e179.getSource() == dados[0] && cuatro == 1) {
@@ -4301,6 +4518,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e179.getSource() == dados[0] && cuatro == 2) {
@@ -4308,6 +4526,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e179.getSource() == dados[0] && cuatro== 3) {
@@ -4315,6 +4534,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e179.getSource() == dados[0] && cuatro== 4) {
@@ -4322,6 +4542,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e179.getSource() == dados[0] && cuatro == 5) {
@@ -4329,6 +4550,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[0].setLocation(50,50);
                                     panelDadosInactivos.add(dados[0]);
+                                    dados[0].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
 
@@ -4348,6 +4570,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e180.getSource() == dados[1] && cinco == 1) {
@@ -4355,6 +4578,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e180.getSource() == dados[1] && cinco == 2) {
@@ -4362,6 +4586,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e180.getSource() == dados[1] && cinco == 3) {
@@ -4369,6 +4594,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e180.getSource() == dados[1] && cinco == 4) {
@@ -4376,6 +4602,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e180.getSource() == dados[1] && cinco == 5) {
@@ -4383,6 +4610,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[1].setLocation(95,95);
                                     panelDadosInactivos.add(dados[1]);
+                                    dados[1].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -4401,6 +4629,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(60,60);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
 
                                 }
@@ -4409,6 +4638,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(60,60);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e181.getSource() == dados[2] && seis == 2) {
@@ -4416,6 +4646,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(60,60);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e181.getSource() == dados[2] && seis == 3) {
@@ -4423,6 +4654,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(60,60);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e181.getSource() == dados[2] && seis == 4) {
@@ -4430,6 +4662,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(60,60);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e181.getSource() == dados[2] && seis == 5) {
@@ -4437,6 +4670,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[2].setLocation(60,60);
                                     panelDadosInactivos.add(dados[2]);
+                                    dados[2].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -4455,6 +4689,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(70,70);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e182.getSource() == dados[3] && siete == 1) {
@@ -4462,6 +4697,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(70,70);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e182.getSource() == dados[3] && siete == 2) {
@@ -4469,6 +4705,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(70,70);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e182.getSource() == dados[3] && siete == 3) {
@@ -4476,6 +4713,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(70,70);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e182.getSource() == dados[3] && siete == 4) {
@@ -4483,6 +4721,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(70,70);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e182.getSource() == dados[3] && siete == 5) {
@@ -4490,6 +4729,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[3].setLocation(70,70);
                                     panelDadosInactivos.add(dados[3]);
+                                    dados[3].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -4509,6 +4749,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(80,80);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e183.getSource() == dados[4] && ocho == 1) {
@@ -4516,6 +4757,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(80,80);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e183.getSource() == dados[4] && ocho == 2) {
@@ -4523,6 +4765,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(80,80);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e183.getSource() == dados[4] && ocho == 3) {
@@ -4530,6 +4773,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(80,80);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e183.getSource() == dados[4] && ocho == 4) {
@@ -4537,6 +4781,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(80,80);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e183.getSource() == dados[4] && ocho == 5) {
@@ -4544,6 +4789,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[4].setLocation(80,80);
                                     panelDadosInactivos.add(dados[4]);
+                                    dados[4].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
@@ -4563,6 +4809,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e184.getSource() == dados[5] && nueve == 1) {
@@ -4570,6 +4817,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e184.getSource() == dados[5] && nueve == 2) {
@@ -4577,6 +4825,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e184.getSource() == dados[5] && nueve == 3) {
@@ -4584,6 +4833,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e184.getSource() == dados[5] && nueve == 4) {
@@ -4591,6 +4841,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                                 if (e184.getSource() == dados[5] && nueve == 5) {
@@ -4598,6 +4849,7 @@ public class GUIGeek extends JFrame {
                                     panelDadosActivos.repaint();
                                     dados[5].setLocation(90,90);
                                     panelDadosInactivos.add(dados[5]);
+                                    dados[5].setEnabled(false);
                                     panelDadosInactivos.repaint();
                                 }
                             });
