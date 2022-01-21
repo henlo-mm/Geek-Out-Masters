@@ -311,7 +311,6 @@ public class GUIGeek extends JFrame {
                 dado_.getDragon();
             }
             if (e.getSource() == dados[0] && cuatro == 1) {
-                System.out.print(e.getID());
 
                 panelDadosActivos.remove(dados[0]);
                 panelDadosActivos.repaint();
@@ -323,8 +322,6 @@ public class GUIGeek extends JFrame {
                 panelDadosActivos.repaint();
                 panelDadosUsados.add(dados[0]);
                 panelDadosUsados.repaint();
-                System.out.print(e.getID());
-
 
                 dados[1].addMouseListener(new MouseAdapter() {
                     public void mousePressed(MouseEvent e) {
@@ -337,36 +334,36 @@ public class GUIGeek extends JFrame {
                                     if (e.getSource() == dados[1] && cinco == 0) {
                                         dados[1].setIcon(imagenes.get(2));
                                         dados[1].addActionListener(escucha);
-
+                                        cinco = 2;
                                     }
                                     if (e.getSource() == dados[1] && cinco == 1) {
                                         dados[1].setIcon(imagenes.get(4));
                                         dados[1].addActionListener(escucha);
+                                        cinco = 4;
 
                                     }
                                     if (e.getSource() == dados[1] && cinco == 2) {
 
                                         dados[1].setIcon(imagenes.get(0));
                                         dados[1].addActionListener(escucha);
-
+                                        cinco = 0;
                                     }
                                     if (e.getSource() == dados[1] && cinco == 3) {
 
-
                                         dados[1].setIcon(imagenes.get(5));
                                         dados[1].addActionListener(escucha);
-
-
+                                        cinco = 5;
                                     }
                                     if (e.getSource() == dados[1] && cinco == 4) {
 
                                         dados[1].setIcon(imagenes.get(1));
                                         dados[1].addActionListener(escucha);
-
+                                        cinco = 1;
                                     }
                                     if (e.getSource() == dados[1] && cinco == 5) {
                                         dados[1].setIcon(imagenes.get(3));
                                         dados[1].addActionListener(escucha);
+                                        cinco = 3;
                                     }
 
 
@@ -385,94 +382,92 @@ public class GUIGeek extends JFrame {
                             dados[2].addActionListener(new ActionListener() {
                                 public void actionPerformed(ActionEvent e) {
                                     if (e.getSource() == dados[2] && seis == 0) {
-
-                                        dados[2].setIcon(new ImageIcon(getClass().getResource("/resources/2.png")));
+                                        dados[2].setIcon(imagenes.get(2));
                                         dados[2].addActionListener(escucha);
-
+                                        seis = 2;
                                     }
                                     if (e.getSource() == dados[2] && seis == 1) {
 
-                                        dados[2].setIcon(new ImageIcon(getClass().getResource("/resources/4.png")));
+                                        dados[2].setIcon(imagenes.get(4));
                                         dados[2].addActionListener(escucha);
+                                        seis = 4;
                                     }
                                     if (e.getSource() == dados[2] && seis == 2) {
 
-                                        dados[2].setIcon(new ImageIcon(getClass().getResource("/resources/0.png")));
+                                        dados[2].setIcon(imagenes.get(0));
                                         dados[2].addActionListener(escucha);
+                                        seis = 0;
                                     }
                                     if (e.getSource() == dados[2] && seis == 3) {
 
-                                        dados[2].setIcon(new ImageIcon(getClass().getResource("/resources/5.png")));
+                                        dados[2].setIcon(imagenes.get(5));
                                         dados[2].addActionListener(escucha);
+                                        seis = 3;
 
                                     }
                                     if (e.getSource() == dados[2] && seis == 4) {
 
-                                        dados[2].setIcon(new ImageIcon(getClass().getResource("/resources/1.png")));
+                                        dados[2].setIcon(imagenes.get(1));;
                                         dados[2].addActionListener(escucha);
+                                        seis = 1;
 
                                     }
                                     if (e.getSource() == dados[2] && seis == 5) {
 
-                                        dados[2].setIcon(new ImageIcon(getClass().getResource("/resources/3.png")));
+                                        dados[2].setIcon(imagenes.get(3));
                                         dados[2].addActionListener(escucha);
-
+                                        seis = 3;
                                     }
-
-
                                 }
                             });
                         }
                     }
                 });
 
-
                 dados[3].addMouseListener(new MouseAdapter() {
                     public void mousePressed(MouseEvent e) {
                         System.out.println(e.getButton() == MouseEvent.BUTTON3);
                         if (e.getButton() == MouseEvent.BUTTON3) {
                             dados[3].removeActionListener(escucha);
-
-
                             dados[3].addActionListener(new ActionListener() {
                                 public void actionPerformed(ActionEvent e) {
                                     if (e.getSource() == dados[3] && siete == 0) {
 
-                                        dados[3].setIcon(new ImageIcon(getClass().getResource("/resources/2.png")));
+                                        dados[3].setIcon(imagenes.get(2));
                                         dados[3].addActionListener(escucha);
+                                        siete = 2;
 
                                     }
                                     if (e.getSource() == dados[3] && siete == 1) {
 
-                                        dados[3].setIcon(new ImageIcon(getClass().getResource("/resources/4.png")));
+                                        dados[3].setIcon(imagenes.get(4));
                                         dados[3].addActionListener(escucha);
+                                        siete = 4;
 
                                     }
                                     if (e.getSource() == dados[3] && siete == 2) {
 
-                                        dados[3].setIcon(new ImageIcon(getClass().getResource("/resources/0.png")));
+                                        dados[3].setIcon(imagenes.get(0));
                                         dados[3].addActionListener(escucha);
+                                        siete = 0;
 
                                     }
                                     if (e.getSource() == dados[3] && siete == 3) {
-
-                                        dados[3].setIcon(new ImageIcon(getClass().getResource("/resources/5.png")));
+                                        dados[3].setIcon(imagenes.get(5));
                                         dados[3].addActionListener(escucha);
+                                        siete = 5;
 
                                     }
                                     if (e.getSource() == dados[3] && siete == 4) {
-
-                                        dados[3].setIcon(new ImageIcon(getClass().getResource("/resources/1.png")));
+                                        dados[3].setIcon(imagenes.get(1));;
                                         dados[3].addActionListener(escucha);
-
+                                        siete = 1;
                                     }
                                     if (e.getSource() == dados[3] && siete == 5) {
-
-                                        dados[3].setIcon(new ImageIcon(getClass().getResource("/resources/3.png")));
+                                        dados[3].setIcon(imagenes.get(3));
                                         dados[3].addActionListener(escucha);
-
+                                        siete = 3;
                                     }
-
                                 }
                             });
                         }
@@ -484,101 +479,97 @@ public class GUIGeek extends JFrame {
                         System.out.println(e.getButton() == MouseEvent.BUTTON3);
                         if (e.getButton() == MouseEvent.BUTTON3) {
                             dados[4].removeActionListener(escucha);
-
-
                             dados[4].addActionListener(new ActionListener() {
                                 public void actionPerformed(ActionEvent e) {
                                     if (e.getSource() == dados[4] && ocho == 0) {
 
-                                        dados[4].setIcon(new ImageIcon(getClass().getResource("/resources/2.png")));
+                                        dados[4].setIcon(imagenes.get(2));
                                         dados[4].addActionListener(escucha);
-
+                                        ocho = 2;
                                     }
                                     if (e.getSource() == dados[4] && ocho == 1) {
 
-                                        dados[4].setIcon(new ImageIcon(getClass().getResource("/resources/4.png")));
+                                        dados[4].setIcon(imagenes.get(4));
                                         dados[4].addActionListener(escucha);
-
+                                        ocho = 4;
                                     }
                                     if (e.getSource() == dados[4] && ocho == 2) {
 
-                                        dados[4].setIcon(new ImageIcon(getClass().getResource("/resources/0.png")));
+                                        dados[4].setIcon(imagenes.get(0));
                                         dados[4].addActionListener(escucha);
+                                        ocho = 0;
 
                                     }
                                     if (e.getSource() == dados[4] && ocho == 3) {
 
-                                        dados[4].setIcon(new ImageIcon(getClass().getResource("/resources/5.png")));
+                                        dados[4].setIcon(imagenes.get(5));
                                         dados[4].addActionListener(escucha);
+                                        ocho = 5;
 
                                     }
                                     if (e.getSource() == dados[4] && ocho == 4) {
 
-                                        dados[4].setIcon(new ImageIcon(getClass().getResource("/resources/1.png")));
+                                        dados[4].setIcon(imagenes.get(1));
                                         dados[4].addActionListener(escucha);
+                                        ocho = 1;
 
                                     }
                                     if (e.getSource() == dados[4] && ocho == 5) {
 
-                                        dados[4].setIcon(new ImageIcon(getClass().getResource("/resources/3.png")));
+                                        dados[3].setIcon(imagenes.get(3));
                                         dados[4].addActionListener(escucha);
-
+                                        ocho = 3;
                                     }
-
                                 }
                             });
                         }
                     }
                 });
 
-
                 dados[5].addMouseListener(new MouseAdapter() {
                     public void mousePressed(MouseEvent e) {
                         System.out.println(e.getButton() == MouseEvent.BUTTON3);
                         if (e.getButton() == MouseEvent.BUTTON3) {
                             dados[5].removeActionListener(escucha);
-
-
                             dados[5].addActionListener(new ActionListener() {
                                 public void actionPerformed(ActionEvent e) {
                                     if (e.getSource() == dados[5] && nueve == 0) {
-
-                                        dados[5].setIcon(new ImageIcon(getClass().getResource("/resources/2.png")));
+                                        dados[5].setIcon(imagenes.get(2));
                                         dados[5].addActionListener(escucha);
-
+                                        nueve = 2;
                                     }
                                     if (e.getSource() == dados[5] && nueve == 1) {
 
-                                        dados[5].setIcon(new ImageIcon(getClass().getResource("/resources/4.png")));
+                                        dados[5].setIcon(imagenes.get(4));
                                         dados[5].addActionListener(escucha);
+                                        nueve = 5;
 
                                     }
                                     if (e.getSource() == dados[5] && nueve == 2) {
-
-                                        dados[5].setIcon(new ImageIcon(getClass().getResource("/resources/0.png")));
+                                        dados[5].setIcon(imagenes.get(0));
                                         dados[5].addActionListener(escucha);
+                                        nueve = 0;
 
                                     }
                                     if (e.getSource() == dados[5] && nueve == 3) {
 
-                                        dados[5].setIcon(new ImageIcon(getClass().getResource("/resources/5.png")));
+                                        dados[5].setIcon(imagenes.get(5));
                                         dados[5].addActionListener(escucha);
+                                        nueve = 5;
 
                                     }
                                     if (e.getSource() == dados[5] && nueve == 4) {
 
-                                        dados[5].setIcon(new ImageIcon(getClass().getResource("/resources/1.png")));
+                                        dados[5].setIcon(imagenes.get(1));
                                         dados[5].addActionListener(escucha);
-
+                                        nueve = 1;
 
                                     }
                                     if (e.getSource() == dados[5] && nueve == 5) {
-
-                                        dados[5].setIcon(new ImageIcon(getClass().getResource("/resources/3.png")));
+                                        dados[5].setIcon(imagenes.get(3));
                                         dados[5].addActionListener(escucha);
-
+                                        nueve = 3;
                                     }
-
                                 }
                             });
                         }
@@ -590,45 +581,43 @@ public class GUIGeek extends JFrame {
                         System.out.println(e.getButton() == MouseEvent.BUTTON3);
                         if (e.getButton() == MouseEvent.BUTTON3) {
                             dados[6].removeActionListener(escucha);
-
-
                             dados[6].addActionListener(new ActionListener() {
                                 public void actionPerformed(ActionEvent e) {
                                     if (e.getSource() == dados[6] && diez == 0) {
-
-                                        dados[6].setIcon(new ImageIcon(getClass().getResource("/resources/2.png")));
+                                        dados[6].setIcon(imagenes.get(2));;
                                         dados[6].addActionListener(escucha);
-
+                                        diez = 2;
                                     }
                                     if (e.getSource() == dados[6] && diez == 1) {
-
-                                        dados[6].setIcon(new ImageIcon(getClass().getResource("/resources/4.png")));
+                                        dados[6].setIcon(imagenes.get(4));
                                         dados[6].addActionListener(escucha);
+                                        diez = 4;
 
                                     }
                                     if (e.getSource() == dados[6] && diez == 2) {
-
-                                        dados[6].setIcon(new ImageIcon(getClass().getResource("/resources/0.png")));
+                                        dados[6].setIcon(imagenes.get(0));
                                         dados[6].addActionListener(escucha);
-
+                                        diez = 0;
                                     }
                                     if (e.getSource() == dados[6] && diez == 3) {
 
-                                        dados[6].setIcon(new ImageIcon(getClass().getResource("/resources/5.png")));
+                                        dados[6].setIcon(imagenes.get(5));
                                         dados[6].addActionListener(escucha);
+                                        diez = 5;
 
                                     }
                                     if (e.getSource() == dados[6] && diez == 4) {
 
-                                        dados[6].setIcon(new ImageIcon(getClass().getResource("/resources/1.png")));
+                                        dados[6].setIcon(imagenes.get(1));
                                         dados[6].addActionListener(escucha);
+                                        diez = 1;
 
                                     }
                                     if (e.getSource() == dados[6] && diez == 5) {
 
-                                        dados[6].setIcon(new ImageIcon(getClass().getResource("/resources/3.png")));
+                                        dados[5].setIcon(imagenes.get(3));
                                         dados[6].addActionListener(escucha);
-
+                                        diez = 3;
                                     }
 
                                 }
@@ -637,9 +626,287 @@ public class GUIGeek extends JFrame {
 
                     }
                 });
+            }
+            // Aqui empieza la definicion del superheroe para el dado 1 con respecto a los demas dados
+            else if (e.getSource() == dados[1] && cinco == 2) {
+
+                panelDadosActivos.remove(dados[1]);
+                panelDadosActivos.repaint();
+                panelDadosUsados.add(dados[1]);
+                panelDadosUsados.repaint();
+
+                dados[0].addMouseListener(new MouseAdapter() {
+                    public void mousePressed(MouseEvent e) {
+                        System.out.println(e.getButton() == MouseEvent.BUTTON3);
+                        if (e.getButton() == MouseEvent.BUTTON3) {
+                            dados[0].removeActionListener(escucha);
+                            dados[0].addActionListener(new ActionListener() {
+                                public void actionPerformed(ActionEvent e) {
+                                    if (e.getSource() == dados[0] && cuatro == 0) {
+                                        dados[0].setIcon(imagenes.get(2));
+                                        dados[0].addActionListener(escucha);
+                                        cuatro = 2;
+                                    }
+                                    if (e.getSource() == dados[0] && cuatro == 1) {
+                                        dados[0].setIcon(imagenes.get(4));
+                                        dados[0].addActionListener(escucha);
+                                        cuatro = 4;
+                                    }
+                                    if (e.getSource() == dados[0] && cuatro == 2) {
+
+                                        dados[0].setIcon(imagenes.get(0));
+                                        dados[0].addActionListener(escucha);
+                                        cuatro = 0;
+                                    }
+                                    if (e.getSource() == dados[0] && cuatro== 3) {
+                                        dados[0].setIcon(imagenes.get(5));
+                                        dados[0].addActionListener(escucha);
+                                        cuatro = 5;
+                                    }
+                                    if (e.getSource() == dados[0] && cuatro== 4) {
+                                        dados[0].setIcon(imagenes.get(1));
+                                        dados[0].addActionListener(escucha);
+                                        cuatro = 1;
+                                    }
+                                    if (e.getSource() == dados[0] && cuatro == 5) {
+                                        dados[0].setIcon(imagenes.get(3));
+                                        dados[0].addActionListener(escucha);
+                                        cuatro = 3;
+                                    }
 
 
-            } else if (e.getSource() == dados[0] && cuatro == 3) {
+                                }
+                            });
+                        }
+                    }
+                });
+
+                dados[2].addMouseListener(new MouseAdapter() {
+                    public void mousePressed(MouseEvent e) {
+                        System.out.println(e.getButton() == MouseEvent.BUTTON3);
+                        if (e.getButton() == MouseEvent.BUTTON3) {
+                            dados[2].removeActionListener(escucha);
+                            dados[2].addActionListener(new ActionListener() {
+                                public void actionPerformed(ActionEvent e) {
+                                    if (e.getSource() == dados[2] && seis == 0) {
+                                        dados[2].setIcon(imagenes.get(2));
+                                        dados[2].addActionListener(escucha);
+                                        seis = 2;
+
+                                    }
+                                    if (e.getSource() == dados[2] && seis == 1) {
+                                        dados[2].setIcon(imagenes.get(4));
+                                        dados[2].addActionListener(escucha);
+                                        seis = 4;
+                                    }
+                                    if (e.getSource() == dados[2] && seis == 2) {
+
+                                        dados[2].setIcon(imagenes.get(0));
+                                        dados[2].addActionListener(escucha);
+                                        seis = 0;
+                                    }
+                                    if (e.getSource() == dados[2] && seis == 3) {
+                                        dados[2].setIcon(imagenes.get(5));
+                                        dados[2].addActionListener(escucha);
+                                        seis = 5;
+                                    }
+                                    if (e.getSource() == dados[2] && seis == 4) {
+
+                                        dados[2].setIcon(imagenes.get(1));;
+                                        dados[2].addActionListener(escucha);
+                                        seis = 1;
+                                    }
+                                    if (e.getSource() == dados[2] && seis == 5) {
+                                        dados[2].setIcon(imagenes.get(3));
+                                        dados[2].addActionListener(escucha);
+                                        seis = 3;
+                                    }
+                                }
+                            });
+                        }
+                    }
+                });
+
+                dados[3].addMouseListener(new MouseAdapter() {
+                    public void mousePressed(MouseEvent e) {
+                        System.out.println(e.getButton() == MouseEvent.BUTTON3);
+                        if (e.getButton() == MouseEvent.BUTTON3) {
+                            dados[3].removeActionListener(escucha);
+                            dados[3].addActionListener(new ActionListener() {
+                                public void actionPerformed(ActionEvent e) {
+                                    if (e.getSource() == dados[3] && siete == 0) {
+                                        dados[3].setIcon(imagenes.get(2));
+                                        dados[3].addActionListener(escucha);
+                                        siete = 2;
+                                    }
+                                    if (e.getSource() == dados[3] && siete == 1) {
+                                        dados[3].setIcon(imagenes.get(4));
+                                        dados[3].addActionListener(escucha);
+                                        siete = 4;
+                                    }
+                                    if (e.getSource() == dados[3] && siete == 2) {
+                                        dados[3].setIcon(imagenes.get(0));
+                                        dados[3].addActionListener(escucha);
+                                        siete = 0;
+                                    }
+                                    if (e.getSource() == dados[3] && siete == 3) {
+                                        dados[3].setIcon(imagenes.get(5));
+                                        dados[3].addActionListener(escucha);
+                                        siete = 5;
+                                    }
+                                    if (e.getSource() == dados[3] && siete == 4) {
+                                        dados[3].setIcon(imagenes.get(1));
+                                        dados[3].addActionListener(escucha);
+                                        siete = 1;
+                                    }
+                                    if (e.getSource() == dados[3] && siete == 5) {
+                                        dados[3].setIcon(imagenes.get(3));
+                                        dados[3].addActionListener(escucha);
+                                        siete = 5;
+                                    }
+                                }
+                            });
+                        }
+                    }
+                });
+
+                dados[4].addMouseListener(new MouseAdapter() {
+                    public void mousePressed(MouseEvent e) {
+                        System.out.println(e.getButton() == MouseEvent.BUTTON3);
+
+                        if (e.getButton() == MouseEvent.BUTTON3) {
+                            dados[4].removeActionListener(escucha);
+                            dados[4].addActionListener(new ActionListener() {
+                                public void actionPerformed(ActionEvent e) {
+                                    if (e.getSource() == dados[4] && ocho == 0) {
+                                        dados[4].setIcon(imagenes.get(2));
+                                        dados[4].addActionListener(escucha);
+                                        ocho = 2;
+                                    }
+                                    if (e.getSource() == dados[4] && ocho == 1) {
+
+                                        dados[4].setIcon(imagenes.get(4));
+                                        dados[4].addActionListener(escucha);
+                                        ocho = 4;
+
+                                    }
+                                    if (e.getSource() == dados[4] && ocho == 2) {
+                                        dados[4].setIcon(imagenes.get(0));
+                                        dados[4].addActionListener(escucha);
+                                        ocho = 0;
+                                    }
+                                    if (e.getSource() == dados[4] && ocho == 3) {
+                                        dados[4].setIcon(imagenes.get(5));
+                                        dados[4].addActionListener(escucha);
+                                        ocho = 5;
+                                    }
+                                    if (e.getSource() == dados[4] && ocho == 4) {
+                                        dados[4].setIcon(imagenes.get(1));
+                                        dados[4].addActionListener(escucha);
+                                        ocho = 1;
+                                    }
+                                    if (e.getSource() == dados[4] && ocho == 5) {
+                                        dados[4].setIcon(imagenes.get(3));
+                                        dados[4].addActionListener(escucha);
+                                        ocho = 3;
+                                    }
+                                }
+                            });
+                        }
+                    }
+                });
+
+                dados[5].addMouseListener(new MouseAdapter() {
+                    public void mousePressed(MouseEvent e) {
+                        System.out.println(e.getButton() == MouseEvent.BUTTON3);
+
+                        if (e.getButton() == MouseEvent.BUTTON3) {
+                            dados[5].removeActionListener(escucha);
+                            dados[5].addActionListener(new ActionListener() {
+                                public void actionPerformed(ActionEvent e) {
+                                    if (e.getSource() == dados[5] && nueve == 0) {
+                                        dados[5].setIcon(imagenes.get(2));
+                                        dados[5].addActionListener(escucha);
+                                        nueve = 2;
+                                    }
+                                    if (e.getSource() == dados[5] && nueve == 1) {
+                                        dados[5].setIcon(imagenes.get(4));
+                                        dados[5].addActionListener(escucha);
+                                        nueve = 4;
+                                    }
+                                    if (e.getSource() == dados[5] && nueve == 2) {
+                                        dados[5].setIcon(imagenes.get(0));;
+                                        dados[5].addActionListener(escucha);
+                                        nueve = 0;
+                                    }
+                                    if (e.getSource() == dados[5] && nueve == 3) {
+                                        dados[5].setIcon(imagenes.get(5));
+                                        dados[5].addActionListener(escucha);
+                                        nueve = 5;
+                                    }
+                                    if (e.getSource() == dados[5] && nueve == 4) {
+                                        dados[5].setIcon(imagenes.get(1));
+                                        dados[5].addActionListener(escucha);
+                                        nueve = 1;
+                                    }
+                                    if (e.getSource() == dados[5] && nueve == 5) {
+                                        dados[5].setIcon(imagenes.get(3));
+                                        dados[5].addActionListener(escucha);
+                                        nueve = 3;
+                                    }
+                                }
+                            });
+                        }
+                    }
+                });
+
+                dados[6].addMouseListener(new MouseAdapter() {
+                    public void mousePressed(MouseEvent e) {
+                        System.out.println(e.getButton() == MouseEvent.BUTTON3);
+
+                        if (e.getButton() == MouseEvent.BUTTON3) {
+                            dados[6].removeActionListener(escucha);
+                            dados[6].addActionListener(new ActionListener() {
+                                public void actionPerformed(ActionEvent e) {
+                                    if (e.getSource() == dados[6] && diez == 0) {
+                                        dados[6].setIcon(imagenes.get(2));
+                                        dados[6].addActionListener(escucha);
+                                        diez = 2;
+                                    }
+                                    if (e.getSource() == dados[6] && diez == 1) {
+                                        dados[6].setIcon(imagenes.get(4));
+                                        dados[6].addActionListener(escucha);
+                                        diez=4;
+                                    }
+                                    if (e.getSource() == dados[6] && diez == 2) {
+                                        dados[6].setIcon(imagenes.get(0));
+                                        dados[6].addActionListener(escucha);
+                                        diez = 0;
+                                    }
+                                    if (e.getSource() == dados[6] && diez == 3) {
+                                        dados[6].setIcon(imagenes.get(5));
+                                        dados[6].addActionListener(escucha);
+                                        diez = 5;
+                                    }
+                                    if (e.getSource() == dados[6] && diez == 4) {
+                                        dados[6].setIcon(imagenes.get(1));
+                                        dados[6].addActionListener(escucha);
+                                        diez = 1;
+                                    }
+                                    if (e.getSource() == dados[6] && diez == 5) {
+                                        dados[6].setIcon(imagenes.get(3));
+                                        dados[6].addActionListener(escucha);
+                                        diez = 3;
+                                    }
+                                }
+                            });
+                        }
+                    }
+                });
+
+
+            }
+            /* else if (e.getSource() == dados[0] && cuatro == 3) {
                 System.out.print(e.getID());
 
                 panelDadosActivos.remove(dados[0]);
@@ -2315,7 +2582,7 @@ public class GUIGeek extends JFrame {
                 panelDadosInactivos.repaint();
                 panelDadosUsados.add(botones[2]);
                 panelDadosUsados.repaint();
-            }
+            } */
 
             if (e.getSource() == salir) {
                 System.exit(0);
@@ -2330,6 +2597,3 @@ public class GUIGeek extends JFrame {
 
 
 }
-
-
-
