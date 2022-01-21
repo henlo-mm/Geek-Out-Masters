@@ -3,6 +3,8 @@ package GeekOut;
 public class ModelGeek {
     private Dado dado,dado2, dado3, dado4, dado5, dado6, dado7, dado8, dado9, dado10, dadoInactivo, dadoInactivo2, dadoInactivo3;
     private final int[] caras;
+    private GUIGeek guiGeek;
+    int puntos;
 
     public ModelGeek() {
         dado = new Dado();
@@ -21,6 +23,9 @@ public class ModelGeek {
         caras = new int[2];
 
     }
+   /* public void determinarJuego(){
+        if(guiGeek.)
+    } */
 
     public void calcularTiro(){
 
