@@ -47,9 +47,9 @@ public void getDragon(){
         JOptionPane.showMessageDialog(null, "Este es un mensaje de Advertencia",
                 "WARNING_MESSAGE", JOptionPane.WARNING_MESSAGE);
     }
-public void getMeeple(JButton x){
+/*public void getMeeple(JButton x){
 
-}
+}*/
     /**  public int getCorazon() {
      Random aleatorio = new Random();
      this.corazon = aleatorio.nextInt(2) + 1;

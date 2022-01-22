@@ -2,7 +2,7 @@ package GeekOut;
 
 import javax.swing.*;
 import java.awt.*;
-
+//provee el estilo al titulo del juego
 public class Header extends JLabel{
     public Header(String title, Color colorBackground) {
         this.setText(title);

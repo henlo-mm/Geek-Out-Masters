@@ -1,5 +1,6 @@
 package GeekOut;
-
+//Esperanza Calderon 2025176 - 2711
+//Robert Fernando Gil 2022985 - 2711
 import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
@@ -283,6 +284,7 @@ public class GUIGeek extends JFrame {
         constraints.anchor = GridBagConstraints.CENTER;
         add(panelPuntuacion, constraints);
         //panelPuntuacion.add();
+
     }
 
 

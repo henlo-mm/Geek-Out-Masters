@@ -23,16 +23,10 @@ public class ModelGeek {
         caras = new int[2];
 
     }
-   /* public void determinarJuego(){
-        if(guiGeek.)
-    } */
-
-    public void calcularTiro(){
 
 
-    }
 
-
+// Devuelve la cara del dado
     public int[] getCaras() {
         return caras;
     }
